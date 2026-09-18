@@ -35,7 +35,8 @@ body.home-mode>header,body.home-mode>nav,body.home-mode>main,body.home-mode>foot
 <div class="homequote">« Chaque étape te fait progresser. » — M. Berenguer</div>
 </section>
 <header><div class="wrap"><h1>Maths M. Berenguer</h1><p>Les maths au collège, simplement.</p></div></header><nav><div class="wrap tabs"><button class="tab home-tab" onclick="goHome()">🏠 Accueil</button><button class="tab active" data-level="5e">5e</button><button class="tab" data-level="4e">4e</button><button class="tab" data-level="3e">3e</button></div></nav><main class="wrap">
-<section id="5e" class="level active"><div id="fiveHome"><div class="hero"><span class="badge">Classe de 5e</span><h2>Mes séquences</h2><p class="muted">Cours, vidéos, exercices et révisions.</p></div><div class="grid"><article class="card"><span class="badge">Séquence 1</span><h3>L'ordre des opérations</h3><p>Parenthèses, calculs sans parenthèses, priorités opératoires et problèmes.</p><div class="btns"><button class="btn" onclick="openSeq()">Commencer la séquence →</button></div></article><article class="card"><span class="badge">Séquence 2</span><h3>📐 Utilisation de la Géorègle</h3><p>Tracer des perpendiculaires et des parallèles, mesurer et construire des angles.</p><div class="btns"><button class="btn" onclick="openSeq2()">Commencer la séquence →</button></div></article></div></div>
+<section id="5e" class="level active"><div id="fiveHome"><div class="hero"><span class="badge">Classe de 5e</span><h2>Mes séquences</h2><p class="muted">Cours, vidéos, exercices et révisions.</p></div><div class="grid"><article class="card"><span class="badge">Séquence 1</span><h3>L'ordre des opérations</h3><p>Parenthèses, calculs sans parenthèses, priorités opératoires et problèmes.</p><div class="btns"><button class="btn" onclick="openSeq()">Commencer la séquence →</button></div></article><article class="card"><span class="badge">Séquence 2</span><h3>📐 Utilisation de la Géorègle</h3><p>Tracer des perpendiculaires et des parallèles, mesurer et construire des angles.</p><div class="btns"><button class="btn" onclick="openSeq2()">Commencer la séquence →</button></div></article>
+<article class="card"><span class="badge">Séquence 3</span><h3>🔺 Triangles</h3><p>Inégalité triangulaire, constructibilité et construction de triangles.</p><div class="btns"><button class="btn" onclick="openSeq3()">Commencer la séquence →</button></div></article></div></div>
 <div id="seq1" class="sequence">
 <button class="btn light back" onclick="closeSeq()">← Retour aux séquences</button>
 <div class="hero">
@@ -205,6 +206,87 @@ body.home-mode>header,body.home-mode>nav,body.home-mode>main,body.home-mode>foot
   <button class="btn" onclick="gradeGeo()">Voir mon score</button><div id="resultGeo" class="result"></div>
 </article>
 </div>
+<div id="seq3" class="sequence">
+<button class="btn light back" onclick="closeSeq3()">← Retour aux séquences</button>
+
+<div class="hero">
+  <span class="badge">5e • Séquence 3</span>
+  <h2>🔺 Triangles</h2>
+  <p>Objectif : utiliser l’inégalité triangulaire et savoir construire un triangle à partir de différentes informations.</p>
+</div>
+
+<div class="resource-nav" style="grid-template-columns:repeat(auto-fit,minmax(145px,1fr))">
+  <a href="#coursTri">📘 COURS</a>
+  <a href="#activitesTri">🧩 ACTIVITÉS</a>
+  <a href="#videosTri">🎥 VIDÉOS</a>
+  <a class="exercise-link" href="#exercicesTri">✏️ EXERCICES</a>
+  <a href="#plusTri">🚀 PLUS LOIN</a>
+  <a href="#revisionTri">🎯 RÉVISIONS</a>
+  <a href="#qcmTri">🎮 QCM</a>
+</div>
+
+<h2 id="coursTri" class="section-title">📘 COURS</h2>
+<div class="grid">
+  <article class="card"><span class="badge">I</span><h3>Inégalité triangulaire</h3><p>Cas général, condition de constructibilité d’un triangle et cas d’égalité.</p></article>
+  <article class="card"><span class="badge">II.a</span><h3>Trois côtés</h3><p>Construire un triangle lorsque les longueurs de ses trois côtés sont connues.</p></article>
+  <article class="card"><span class="badge">II.b</span><h3>Deux côtés + un angle</h3><p>Construire un triangle avec deux longueurs et l’angle délimité par ces côtés.</p></article>
+  <article class="card"><span class="badge">II.c</span><h3>Un côté + deux angles</h3><p>Construire un triangle avec un côté et les deux angles adjacents à ce côté.</p></article>
+</div>
+<article class="card" style="margin-top:14px">
+  <span class="badge">Cours complet</span><h3>📘 Cours – Triangles</h3>
+  <p class="muted">Le cours complet de la séquence 3 en PDF.</p>
+  <div class="btns"><a class="btn" href="docs/cours-5e-triangles.pdf" target="_blank">📘 Ouvrir le cours</a></div>
+</article>
+
+<h2 id="activitesTri" class="section-title">🧩 ACTIVITÉS</h2>
+<div class="grid">
+  <article class="card"><span class="badge">Activité 1</span><h3>🍝 Le Spaghetti</h3><p class="muted">Peut-on toujours former un triangle avec trois morceaux ? Découvre la condition nécessaire.</p><div class="btns"><a class="btn" href="docs/activite-5e-le-spaghetti.pdf" target="_blank">🧩 Ouvrir l’activité</a></div></article>
+  <article class="card"><span class="badge">Activité 2</span><h3>🎲 Les trois dés</h3><p class="muted">Trois dés donnent les longueurs des côtés : à toi de décider si le triangle est constructible.</p><div class="btns"><a class="btn" href="docs/activite-5e-les-trois-des.pdf" target="_blank">🧩 Ouvrir l’activité</a></div></article>
+  <article class="card"><span class="badge">Activité 3</span><h3>🔎 Le Triangle Absolu</h3><p class="muted">Choisir les informations nécessaires pour construire un triangle en dépensant le moins possible.</p><div class="btns"><a class="btn" href="docs/activite-5e-le-triangle-mystere.pdf" target="_blank">🧩 Ouvrir l’activité</a></div></article>
+</div>
+
+<h2 id="videosTri" class="section-title">🎥 VIDÉOS</h2>
+<div class="grid">
+  <article class="card"><span class="badge">Vidéo 1</span><h3>Inégalité triangulaire</h3><p class="muted">Cas général et constructibilité.</p><div class="btns"><a class="btn" href="videos/video1-5e-triangles.mp4" target="_blank">▶️ Regarder</a></div></article>
+  <article class="card"><span class="badge">Vidéo 2</span><h3>Cas d’égalité</h3><p class="muted">Comprendre le cas du triangle plat et l’alignement.</p><div class="btns"><a class="btn" href="videos/video2-5e-triangles.mp4" target="_blank">▶️ Regarder</a></div></article>
+  <article class="card"><span class="badge">Vidéo 3</span><h3>Construire avec trois côtés</h3><p class="muted">Méthode de construction à partir de trois longueurs.</p><div class="btns"><a class="btn" href="videos/video3-5e-triangles.mp4" target="_blank">▶️ Regarder</a></div></article>
+  <article class="card"><span class="badge">Vidéo 4</span><h3>Deux côtés et un angle</h3><p class="muted">Construction avec deux longueurs et l’angle compris.</p><div class="btns"><a class="btn" href="videos/video4-5e-triangles.mp4" target="_blank">▶️ Regarder</a></div></article>
+  <article class="card"><span class="badge">Vidéo 5</span><h3>Un côté et deux angles</h3><p class="muted">Construction avec une longueur et deux angles adjacents.</p><div class="btns"><a class="btn" href="videos/video5-5e-triangles.mp4" target="_blank">▶️ Regarder</a></div></article>
+</div>
+
+<h2 id="exercicesTri" class="section-title exercise-title">✏️ EXERCICES</h2>
+<div class="grid">
+  <article class="card"><span class="badge">Exercices 1 à 3</span><h3>Inégalité triangulaire</h3><p class="muted">Constructibilité, alignement et comparaison de longueurs.</p><div class="btns"><a class="btn" href="docs/exercices-5e-inegalite-triangulaire.pdf" target="_blank">📄 Ouvrir les exercices</a></div></article>
+  <article class="card"><span class="badge">Exercices 4 et 5</span><h3>Constructions de triangles</h3><p class="muted">Construire des triangles quelconques, équilatéraux, isocèles et rectangles.</p><div class="btns"><a class="btn" href="docs/exercices-5e-constructions-triangles.pdf" target="_blank">📄 Ouvrir les exercices</a></div></article>
+</div>
+
+<h2 id="plusTri" class="section-title">🚀 POUR ALLER PLUS LOIN</h2>
+<div class="grid">
+  <article class="card"><span class="badge">Défi</span><h3>🗼 Le phare</h3><p class="muted">Utiliser une construction de triangle pour estimer une distance inaccessible.</p><div class="btns"><a class="btn" href="docs/exercice-5e-le-phare.pdf" target="_blank">🗼 Ouvrir le défi</a></div></article>
+  <article class="card"><span class="badge">Illusion d’optique</span><h3>🔺 Triangle de Penrose</h3><p class="muted">Construire pas à pas une illusion d’optique géométrique.</p><div class="btns"><a class="btn" href="docs/triangle-de-penrose.pdf" target="_blank">🔺 Ouvrir l’activité</a></div></article>
+  <article class="card"><span class="badge">Tâche finale</span><h3>🏁 Tâche finale – Triangles</h3><p class="muted">Activité finale de la séquence.</p><div class="btns"><a class="btn" href="docs/tache-finale-5e-triangles.pdf" target="_blank">🏁 Ouvrir la tâche finale</a></div></article>
+</div>
+
+<h2 id="revisionTri" class="section-title">🎯 JE PRÉPARE MON ÉVALUATION</h2>
+<div class="grid">
+  <article class="card"><span class="badge">Organisation</span><h3>📋 Plan de travail</h3><p class="muted">Retrouve les étapes du cours et les exercices à maîtriser.</p><div class="btns"><a class="btn" href="docs/plan-de-travail-5e-triangles.pdf" target="_blank">📋 Ouvrir le plan de travail</a></div></article>
+  <article class="card"><span class="badge">Entraînement</span><h3>📝 Évaluation blanche</h3><p class="muted">Inégalité triangulaire et constructions de triangles.</p><div class="btns"><a class="btn" href="docs/evaluation-blanche-5e-triangles.pdf" target="_blank">📝 Ouvrir l’évaluation blanche</a><a class="btn light" href="docs/evaluation-blanche-5e-triangles-correction.pdf" target="_blank">✅ Voir la correction</a></div></article>
+  <article class="card"><h3>À retenir</h3><p>1. Comparer le plus grand côté à la somme des deux autres.<br>2. Reconnaître le cas d’égalité.<br>3. Construire un triangle avec trois informations adaptées.</p></article>
+</div>
+
+<h2 id="qcmTri" class="section-title">🎮 JE TESTE MES CONNAISSANCES</h2>
+<article class="card quiz">
+  <span class="badge">Mini-QCM</span><h3>Triangles</h3>
+  <p><b>1.</b> Peut-on construire un triangle de côtés 3 cm, 4 cm et 8 cm ?</p>
+  <label><input type="radio" name="t1" value="a"> Oui</label><label><input type="radio" name="t1" value="b"> Non</label>
+  <p><b>2.</b> Avec 5 cm, 7 cm et 12 cm, on obtient :</p>
+  <label><input type="radio" name="t2" value="a"> un triangle plat</label><label><input type="radio" name="t2" value="b"> aucun triangle</label><label><input type="radio" name="t2" value="c"> un triangle équilatéral</label>
+  <p><b>3.</b> Pour construire un triangle unique, le cours indique qu’il faut au minimum :</p>
+  <label><input type="radio" name="t3" value="a"> 1 information</label><label><input type="radio" name="t3" value="b"> 2 informations</label><label><input type="radio" name="t3" value="c"> 3 informations</label>
+  <button class="btn" onclick="gradeTri()">Voir mon score</button><div id="resultTri" class="result"></div>
+</article>
+</div>
+
 </section>
 <section id="4e" class="level"><div class="hero"><span class="badge">Classe de 4e</span><h2>Mes séquences</h2></div><div class="grid"><article class="card"><h3>Théorème de Pythagore</h3><p class="muted">La séquence complète arrive bientôt.</p></article></div></section><section id="3e" class="level"><div class="hero"><span class="badge">Classe de 3e</span><h2>Mes séquences</h2></div><div class="grid"><article class="card"><h3>Arithmétique</h3><p class="muted">La séquence complète arrive bientôt.</p></article><article class="card"><h3>Calcul littéral</h3><p class="muted">La séquence complète arrive bientôt.</p></article></div></section>
 </main><footer>Maths M. Berenguer • Espace pédagogique</footer><script>
@@ -213,6 +295,7 @@ function goHome(){
  document.getElementById('homepage').style.display='block';
  document.getElementById('seq1').classList.remove('open');
  document.getElementById('seq2').classList.remove('open');
+ document.getElementById('seq3').classList.remove('open');
  document.getElementById('fiveHome').style.display='block';
  window.scrollTo(0,0);
 }
@@ -225,14 +308,18 @@ function showLevel(level){
  const t=document.querySelector('.tab[data-level="'+level+'"]'); if(t)t.classList.add('active');
  document.getElementById('seq1').classList.remove('open');
  document.getElementById('seq2').classList.remove('open');
+ document.getElementById('seq3').classList.remove('open');
  document.getElementById('fiveHome').style.display='block';
  window.scrollTo(0,0);
 }
 document.querySelectorAll('.tab[data-level]').forEach(b=>b.addEventListener('click',()=>showLevel(b.dataset.level)));
-function openSeq(){document.getElementById('fiveHome').style.display='none';document.getElementById('seq2').classList.remove('open');document.getElementById('seq1').classList.add('open');window.scrollTo(0,0)}
+function openSeq(){document.getElementById('fiveHome').style.display='none';document.getElementById('seq2').classList.remove('open');document.getElementById('seq3').classList.remove('open');document.getElementById('seq1').classList.add('open');window.scrollTo(0,0)}
 function closeSeq(){document.getElementById('seq1').classList.remove('open');document.getElementById('fiveHome').style.display='block';window.scrollTo(0,0)}
-function openSeq2(){document.getElementById('fiveHome').style.display='none';document.getElementById('seq1').classList.remove('open');document.getElementById('seq2').classList.add('open');window.scrollTo(0,0)}
+function openSeq2(){document.getElementById('fiveHome').style.display='none';document.getElementById('seq1').classList.remove('open');document.getElementById('seq3').classList.remove('open');document.getElementById('seq2').classList.add('open');window.scrollTo(0,0)}
 function closeSeq2(){document.getElementById('seq2').classList.remove('open');document.getElementById('fiveHome').style.display='block';window.scrollTo(0,0)}
+function openSeq3(){document.getElementById('fiveHome').style.display='none';document.getElementById('seq1').classList.remove('open');document.getElementById('seq2').classList.remove('open');document.getElementById('seq3').classList.add('open');window.scrollTo(0,0)}
+function closeSeq3(){document.getElementById('seq3').classList.remove('open');document.getElementById('fiveHome').style.display='block';window.scrollTo(0,0)}
+function gradeTri(){let s=0;[['t1','b'],['t2','a'],['t3','c']].forEach(([q,a])=>{let e=document.querySelector('input[name="'+q+'"]:checked');if(e&&e.value===a)s++});let r=document.getElementById('resultTri');r.textContent='Score : '+s+'/3'+(s===3?' — Bravo !':s===2?' — Presque !':' — Reprends le cours puis réessaie.');r.className='result '+(s===3?'ok':'ko')}
 function gradeGeo(){let s=0;[['g1','b'],['g2','a'],['g3','c']].forEach(([q,a])=>{let e=document.querySelector('input[name="'+q+'"]:checked');if(e&&e.value===a)s++});let r=document.getElementById('resultGeo');r.textContent='Score : '+s+'/3'+(s===3?' — Bravo !':s===2?' — Presque !':' — Reprends le cours puis réessaie.');r.className='result '+(s===3?'ok':'ko')}
 function grade(){let s=0;[['q1','b'],['q2','a'],['q3','a']].forEach(([q,a])=>{let e=document.querySelector('input[name="'+q+'"]:checked');if(e&&e.value===a)s++});let r=document.getElementById('result');r.textContent='Score : '+s+'/3'+(s===3?' — Bravo, les priorités sont maîtrisées !':s===2?' — Presque ! Revois la question manquée.':' — Reprends les règles puis réessaie.');r.className='result '+(s===3?'ok':'ko')}
 </script></body></html>

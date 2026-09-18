@@ -35,7 +35,7 @@ body.home-mode>header,body.home-mode>nav,body.home-mode>main,body.home-mode>foot
 <div class="homequote">« Chaque étape te fait progresser. » — M. Berenguer</div>
 </section>
 <header><div class="wrap"><h1>Maths M. Berenguer</h1><p>Les maths au collège, simplement.</p></div></header><nav><div class="wrap tabs"><button class="tab home-tab" onclick="goHome()">🏠 Accueil</button><button class="tab active" data-level="5e">5e</button><button class="tab" data-level="4e">4e</button><button class="tab" data-level="3e">3e</button></div></nav><main class="wrap">
-<section id="5e" class="level active"><div id="fiveHome"><div class="hero"><span class="badge">Classe de 5e</span><h2>Mes séquences</h2><p class="muted">Cours, vidéos, exercices et révisions.</p></div><div class="grid"><article class="card"><span class="badge">Séquence 1</span><h3>L'ordre des opérations</h3><p>Parenthèses, calculs sans parenthèses, priorités opératoires et problèmes.</p><div class="btns"><button class="btn" onclick="openSeq()">Commencer la séquence →</button></div></article><article class="card"><span class="badge">Séquence 2</span><h3>📐 Utilisation de la Géorègle</h3><p>Tracer des perpendiculaires et des parallèles, mesurer et construire des angles.</p><div class="btns"><button class="btn" onclick="openSeq2()">Commencer la séquence →</button></div></article></div></div>
+<section id="5e" class="level active"><div id="fiveHome"><div class="hero"><span class="badge">Classe de 5e</span><h2>Mes séquences</h2><p class="muted">Cours, vidéos, exercices et révisions.</p></div><div class="grid"><article class="card"><span class="badge">Séquence 1</span><h3>L'ordre des opérations</h3><p>Parenthèses, calculs sans parenthèses, priorités opératoires et problèmes.</p><div class="btns"><button class="btn" onclick="openSeq()">Commencer la séquence →</button></div></article><article class="card"><span class="badge">À venir</span><h3>Prochaine séquence</h3><p class="muted">Les autres chapitres seront ajoutés progressivement.</p></article></div></div>
 <div id="seq1" class="sequence">
 <button class="btn light back" onclick="closeSeq()">← Retour aux séquences</button>
 <div class="hero">
@@ -109,94 +109,13 @@ body.home-mode>header,body.home-mode>nav,body.home-mode>main,body.home-mode>foot
 
 <h2 id="qcm5" class="section-title">🎮 JE TESTE MES CONNAISSANCES</h2>
 <article class="card quiz"><span class="badge">Test interactif</span><h3>Mini-QCM</h3><p><b>1.</b> 7 + 3 × 6 = ?</p><label><input type="radio" name="q1" value="a"> 60</label><label><input type="radio" name="q1" value="b"> 25</label><label><input type="radio" name="q1" value="c"> 42</label><p><b>2.</b> (24 − 8) ÷ 4 = ?</p><label><input type="radio" name="q2" value="a"> 4</label><label><input type="radio" name="q2" value="b"> 22</label><label><input type="radio" name="q2" value="c"> 2</label><p><b>3.</b> 28 ÷ 7 × 3 ÷ 12 = ?</p><label><input type="radio" name="q3" value="a"> 1</label><label><input type="radio" name="q3" value="b"> 7</label><label><input type="radio" name="q3" value="c"> 12</label><button class="btn" onclick="grade()">Voir mon score</button><div id="result" class="result"></div></article>
-</div>
-<div id="seq2" class="sequence">
-<button class="btn light back" onclick="closeSeq2()">← Retour aux séquences</button>
-
-<div class="hero">
-  <span class="badge">5e • Séquence 2</span>
-  <h2>📐 Utilisation de la Géorègle</h2>
-  <p>Objectif : savoir tracer des droites perpendiculaires et parallèles, puis mesurer et construire des angles avec la Géorègle.</p>
-</div>
-
-<div class="resource-nav" style="grid-template-columns:repeat(auto-fit,minmax(150px,1fr))">
-  <a href="#coursGeo">📘 COURS</a>
-  <a href="#activitesGeo">🧩 ACTIVITÉS</a>
-  <a class="exercise-link" href="#exercicesGeo">✏️ EXERCICES</a>
-  <a href="#revisionGeo">🎯 RÉVISIONS</a>
-  <a href="#evalGeo">📝 ÉVALUATION</a>
-  <a href="#qcmGeo">🎮 QCM</a>
-</div>
-
-<h2 id="coursGeo" class="section-title">📘 COURS</h2>
-<div class="grid">
-  <article class="card"><span class="badge">I.a</span><h3>Tracer une droite perpendiculaire</h3><p>Superposer la Géorègle sur la droite puis tracer la perpendiculaire passant par le point demandé.</p></article>
-  <article class="card"><span class="badge">I.b</span><h3>Tracer une droite parallèle</h3><p>Tracer une première perpendiculaire, puis une seconde perpendiculaire passant par le point demandé.</p></article>
-  <article class="card"><span class="badge">II.a</span><h3>Mesurer un angle</h3><p>Placer le 0 du rapporteur sur le sommet, aligner la Géorègle sur un côté et lire la mesure. Toujours vérifier si l’angle est aigu ou obtus.</p></article>
-  <article class="card"><span class="badge">II.b</span><h3>Tracer un angle</h3><p>Placer le 0 du rapporteur sur le sommet, tourner jusqu’à la mesure voulue, tracer le côté puis vérifier la nature de l’angle.</p></article>
-</div>
-<article class="card" style="margin-top:14px">
-  <span class="badge">Cours complet</span><h3>📘 Cours – Utilisation de la Géorègle</h3>
-  <p class="muted">Le cours complet de la séquence en PDF.</p>
-  <div class="btns"><a class="btn" href="docs/cours-5e-georegle.pdf" target="_blank">📘 Ouvrir le cours</a></div>
-</article>
-
-<h2 id="activitesGeo" class="section-title">🧩 ACTIVITÉS</h2>
-<div class="grid">
-  <article class="card">
-    <span class="badge">Activité 1</span><h3>👁️ Le rapporteur dans l’œil !</h3>
-    <p class="muted">Estimer plusieurs angles sans Géorègle, les mesurer ensuite et comparer les écarts.</p>
-    <div class="btns"><a class="btn" href="docs/activite-5e-rapporteur-dans-loeil.pdf" target="_blank">🧩 Ouvrir l’activité</a></div>
-  </article>
-  <article class="card">
-    <span class="badge">Activité 2</span><h3>⚡ Constructions d’angles – Les zigzags</h3>
-    <p class="muted">Construire un zigzag en respectant une succession de mesures d’angles.</p>
-    <div class="btns"><a class="btn" href="docs/activite-5e-zigzags.pdf" target="_blank">🧩 Ouvrir l’activité</a></div>
-  </article>
-</div>
-
-<h2 id="exercicesGeo" class="section-title exercise-title">✏️ EXERCICES</h2>
-<article class="card exercise-single">
-  <span class="badge">Fiche complète</span><h3>Exercices – Utilisation de la Géorègle</h3>
-  <p>✓ Exercices 1 à 3 : perpendiculaires et parallèles<br>
-     ✓ Exercice 4 : mesurer un angle<br>
-     ✓ Exercice 5 : tracer un angle</p>
-  <div class="btns"><a class="btn" href="docs/exercices-5e-georegle.pdf" target="_blank">📄 Ouvrir la fiche d’exercices</a></div>
-</article>
-
-<h2 id="revisionGeo" class="section-title">🎯 JE PRÉPARE MON ÉVALUATION</h2>
-<div class="grid">
-  <article class="card"><span class="badge">Organisation</span><h3>📋 Plan de travail</h3><p class="muted">Pour vérifier les notions et exercices travaillés pendant la séquence.</p><div class="btns"><a class="btn" href="docs/plan-de-travail-5e-georegle.pdf" target="_blank">📋 Ouvrir le plan de travail</a></div></article>
-  <article class="card"><h3>À retenir</h3><p>1. Savoir tracer une perpendiculaire.<br>2. Savoir tracer une parallèle.<br>3. Savoir mesurer un angle.<br>4. Savoir construire un angle.</p></article>
-</div>
-
-<h2 id="evalGeo" class="section-title">📝 ÉVALUATION</h2>
-<article class="card">
-  <span class="badge">Évaluation 5e</span><h3>📐 Utilisation de la Géorègle</h3>
-  <p class="muted">Perpendiculaires, parallèles, mesure d’angles et construction d’angles.</p>
-  <div class="btns"><a class="btn" href="docs/evaluation-5e-georegle.pdf" target="_blank">📝 Ouvrir l’évaluation</a></div>
-</article>
-
-<h2 id="qcmGeo" class="section-title">🎮 JE TESTE MES CONNAISSANCES</h2>
-<article class="card quiz">
-  <span class="badge">Mini-QCM</span><h3>Les bons réflexes</h3>
-  <p><b>1.</b> Deux droites perpendiculaires forment un angle de :</p>
-  <label><input type="radio" name="g1" value="a"> 45°</label><label><input type="radio" name="g1" value="b"> 90°</label><label><input type="radio" name="g1" value="c"> 180°</label>
-  <p><b>2.</b> Pour mesurer un angle, le 0 du rapporteur se place :</p>
-  <label><input type="radio" name="g2" value="a"> sur le sommet de l’angle</label><label><input type="radio" name="g2" value="b"> au milieu d’un côté</label><label><input type="radio" name="g2" value="c"> n’importe où</label>
-  <p><b>3.</b> Un angle de 112° est :</p>
-  <label><input type="radio" name="g3" value="a"> aigu</label><label><input type="radio" name="g3" value="b"> droit</label><label><input type="radio" name="g3" value="c"> obtus</label>
-  <button class="btn" onclick="gradeGeo()">Voir mon score</button><div id="resultGeo" class="result"></div>
-</article>
-</div>
-</section>
+</div></section>
 <section id="4e" class="level"><div class="hero"><span class="badge">Classe de 4e</span><h2>Mes séquences</h2></div><div class="grid"><article class="card"><h3>Théorème de Pythagore</h3><p class="muted">La séquence complète arrive bientôt.</p></article></div></section><section id="3e" class="level"><div class="hero"><span class="badge">Classe de 3e</span><h2>Mes séquences</h2></div><div class="grid"><article class="card"><h3>Arithmétique</h3><p class="muted">La séquence complète arrive bientôt.</p></article><article class="card"><h3>Calcul littéral</h3><p class="muted">La séquence complète arrive bientôt.</p></article></div></section>
 </main><footer>Maths M. Berenguer • Espace pédagogique</footer><script>
 function goHome(){
  document.body.classList.add('home-mode');
  document.getElementById('homepage').style.display='block';
  document.getElementById('seq1').classList.remove('open');
- document.getElementById('seq2').classList.remove('open');
  document.getElementById('fiveHome').style.display='block';
  window.scrollTo(0,0);
 }
@@ -208,15 +127,11 @@ function showLevel(level){
  document.getElementById(level).classList.add('active');
  const t=document.querySelector('.tab[data-level="'+level+'"]'); if(t)t.classList.add('active');
  document.getElementById('seq1').classList.remove('open');
- document.getElementById('seq2').classList.remove('open');
  document.getElementById('fiveHome').style.display='block';
  window.scrollTo(0,0);
 }
 document.querySelectorAll('.tab[data-level]').forEach(b=>b.addEventListener('click',()=>showLevel(b.dataset.level)));
-function openSeq(){document.getElementById('fiveHome').style.display='none';document.getElementById('seq2').classList.remove('open');document.getElementById('seq1').classList.add('open');window.scrollTo(0,0)}
+function openSeq(){document.getElementById('fiveHome').style.display='none';document.getElementById('seq1').classList.add('open');window.scrollTo(0,0)}
 function closeSeq(){document.getElementById('seq1').classList.remove('open');document.getElementById('fiveHome').style.display='block';window.scrollTo(0,0)}
-function openSeq2(){document.getElementById('fiveHome').style.display='none';document.getElementById('seq1').classList.remove('open');document.getElementById('seq2').classList.add('open');window.scrollTo(0,0)}
-function closeSeq2(){document.getElementById('seq2').classList.remove('open');document.getElementById('fiveHome').style.display='block';window.scrollTo(0,0)}
-function gradeGeo(){let s=0;[['g1','b'],['g2','a'],['g3','c']].forEach(([q,a])=>{let e=document.querySelector('input[name="'+q+'"]:checked');if(e&&e.value===a)s++});let r=document.getElementById('resultGeo');r.textContent='Score : '+s+'/3'+(s===3?' — Bravo !':s===2?' — Presque !':' — Reprends le cours puis réessaie.');r.className='result '+(s===3?'ok':'ko')}
 function grade(){let s=0;[['q1','b'],['q2','a'],['q3','a']].forEach(([q,a])=>{let e=document.querySelector('input[name="'+q+'"]:checked');if(e&&e.value===a)s++});let r=document.getElementById('result');r.textContent='Score : '+s+'/3'+(s===3?' — Bravo, les priorités sont maîtrisées !':s===2?' — Presque ! Revois la question manquée.':' — Reprends les règles puis réessaie.');r.className='result '+(s===3?'ok':'ko')}
 </script></body></html>

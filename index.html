@@ -1,6 +1,15 @@
 <!doctype html><html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Maths M. Berenguer</title><style>
 :root{--navy:#172554;--blue:#3457d5;--bg:#f5f7fb;--card:#fff;--line:#e5e7eb;--muted:#667085;--green:#087f5b;--red:#c92a2a}*{box-sizing:border-box}body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:var(--bg);color:#182033}header{background:linear-gradient(135deg,#172554,#3457d5);color:#fff;padding:38px 20px}.wrap{max-width:1100px;margin:auto}h1{margin:0 0 8px;font-size:clamp(30px,5vw,48px)}header p{margin:0;color:#dbeafe;font-size:18px}nav{background:#fff;border-bottom:1px solid var(--line);position:sticky;top:0;z-index:5}.tabs{display:flex;gap:8px;padding:10px 20px;overflow:auto}.tab{border:0;border-radius:10px;padding:10px 16px;font-weight:800;background:#eef2ff;color:#253b80;cursor:pointer}.tab.active{background:var(--navy);color:#fff}main{padding:25px 20px 60px}.level{display:none}.level.active{display:block}.hero,.card{background:#fff;border:1px solid var(--line);border-radius:18px;padding:22px;box-shadow:0 5px 18px #1018280b}.hero{margin-bottom:18px}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:16px}.badge{display:inline-block;padding:5px 10px;border-radius:999px;background:#eef2ff;color:#3446a8;font-size:12px;font-weight:800}h2{font-size:28px}h3{margin:10px 0}.muted{color:var(--muted)}.btns{display:flex;gap:8px;flex-wrap:wrap;margin-top:15px}.btn{display:inline-block;background:var(--navy);color:white;text-decoration:none;border:0;border-radius:10px;padding:10px 13px;font-weight:750;cursor:pointer}.btn.light{background:#eef2ff;color:#253b80}.step{border-left:4px solid #3457d5;padding-left:13px;margin:18px 0}.video{width:100%;aspect-ratio:16/9;border:0;border-radius:12px;background:#111}.quiz label{display:block;padding:8px 10px;margin:5px 0;border:1px solid var(--line);border-radius:9px;cursor:pointer}.result{font-weight:800;margin-top:12px}.ok{color:var(--green)}.ko{color:var(--red)}footer{text-align:center;color:var(--muted);padding:25px}.sequence{display:none}.sequence.open{display:block}.back{margin-bottom:14px}
-.section-title{margin:34px 0 14px;font-size:24px}.section-buttons{margin:14px 0 6px}.quiz{max-width:720px}.quiz label{display:block;margin:7px 0}</style></head><body><header><div class="wrap"><h1>Maths M. Berenguer</h1><p>Les maths au collège, simplement.</p></div></header><nav><div class="wrap tabs"><button class="tab active" data-level="5e">5e</button><button class="tab" data-level="4e">4e</button><button class="tab" data-level="3e">3e</button></div></nav><main class="wrap">
+.section-title{margin:34px 0 14px;font-size:24px}.section-buttons{margin:14px 0 6px}.quiz{max-width:720px}.quiz label{display:block;margin:7px 0}
+.resource-nav{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:18px 0 28px}
+.resource-nav a{display:block;text-align:center;text-decoration:none;background:#fff;border:2px solid #dbe2f2;border-radius:14px;padding:16px 10px;font-weight:900;color:#172554;box-shadow:0 4px 12px #1018280b}
+.resource-nav a.exercise-link{background:#172554;color:#fff;border-color:#172554}
+.exercise-title{background:#172554;color:#fff;padding:15px 18px;border-radius:14px}
+@media(max-width:700px){.resource-nav{grid-template-columns:1fr 1fr}.grid{grid-template-columns:1fr}.resource-nav a{padding:14px 8px}}
+
+.exercise-single{max-width:900px;margin:0 auto 28px}
+.exercise-single .btn{font-size:16px;padding:13px 18px}
+</style></head><body><header><div class="wrap"><h1>Maths M. Berenguer</h1><p>Les maths au collège, simplement.</p></div></header><nav><div class="wrap tabs"><button class="tab active" data-level="5e">5e</button><button class="tab" data-level="4e">4e</button><button class="tab" data-level="3e">3e</button></div></nav><main class="wrap">
 <section id="5e" class="level active"><div id="fiveHome"><div class="hero"><span class="badge">Classe de 5e</span><h2>Mes séquences</h2><p class="muted">Cours, vidéos, exercices et révisions.</p></div><div class="grid"><article class="card"><span class="badge">Séquence 1</span><h3>L'ordre des opérations</h3><p>Parenthèses, calculs sans parenthèses, priorités opératoires et problèmes.</p><div class="btns"><button class="btn" onclick="openSeq()">Commencer la séquence →</button></div></article><article class="card"><span class="badge">À venir</span><h3>Prochaine séquence</h3><p class="muted">Les autres chapitres seront ajoutés progressivement.</p></article></div></div>
 <div id="seq1" class="sequence">
 <button class="btn light back" onclick="closeSeq()">← Retour aux séquences</button>
@@ -11,7 +20,14 @@
 <div class="btns"><a class="btn" href="docs/plan-de-travail-5e-ordre-des-operations.pdf" target="_blank">📋 Plan de travail</a></div>
 </div>
 
-<h2 class="section-title">📘 COURS</h2>
+<div class="resource-nav">
+<a href="#cours5">📘 COURS</a>
+<a class="exercise-link" href="#exercices5">✏️ EXERCICES</a>
+<a href="#revision5">🎯 RÉVISIONS</a>
+<a href="#qcm5">🎮 QCM</a>
+</div>
+
+<h2 id="cours5" class="section-title">📘 COURS</h2>
 <div class="grid">
 <article class="card"><span class="badge">I</span><h3>Avec des parenthèses</h3><div class="step"><b>Règle essentielle</b><p>On commence par les calculs à l'intérieur des parenthèses. S'il y en a plusieurs imbriquées, on commence par les plus intérieures.</p></div></article>
 <article class="card"><span class="badge">II</span><h3>Sans parenthèses</h3><div class="step"><b>Additions / soustractions • Multiplications / divisions</b><p>Quand les opérations ont la même priorité, on calcule de gauche à droite.</p></div></article>
@@ -19,23 +35,29 @@
 </div>
 <div class="btns section-buttons"><a class="btn" href="docs/cours-5e-ordre-des-operations.pdf" target="_blank">📘 Ouvrir le cours complet</a></div>
 
-<h2 class="section-title">✏️ EXERCICES</h2>
-<div class="grid">
-<article class="card"><span class="badge">Exercices 1 à 3</span><h3>Calculs avec parenthèses</h3><p class="muted">S'entraîner à calculer les expressions contenant des parenthèses.</p><div class="btns"><a class="btn" href="docs/exercices-5e-ordre-des-operations.pdf" target="_blank">Faire les exercices</a></div></article>
-<article class="card"><span class="badge">Exercices 4 à 6</span><h3>Calculs sans parenthèses</h3><p class="muted">Additions, soustractions, multiplications et divisions.</p><div class="btns"><a class="btn" href="docs/exercices-5e-ordre-des-operations.pdf" target="_blank">Faire les exercices</a></div></article>
-<article class="card"><span class="badge">Exercices 7 à 9</span><h3>Diverses opérations</h3><p class="muted">Appliquer les priorités opératoires dans des calculs mélangés.</p><div class="btns"><a class="btn" href="docs/exercices-5e-ordre-des-operations.pdf" target="_blank">Faire les exercices</a></div></article>
-<article class="card"><span class="badge">Problèmes</span><h3>Je résous des problèmes</h3><p class="muted">Petits problèmes • Gourmandises • Les rectangles.</p><div class="btns"><a class="btn" href="docs/exercices-5e-ordre-des-operations.pdf" target="_blank">Faire les problèmes</a><a class="btn light" href="docs/correction-exercices-5e-ordre-des-operations.pdf" target="_blank">✅ Voir la correction</a></div></article>
-</div>
+<h2 id="exercices5" class="section-title exercise-title">✏️ EXERCICES</h2>
+<article class="card exercise-single">
+  <span class="badge">Fiche complète</span>
+  <h3>Exercices – L’ordre des opérations</h3>
+  <p class="muted">Une seule fiche regroupant tous les exercices de la séquence :</p>
+  <p>✓ Exercices 1 à 3 : avec des parenthèses<br>
+  ✓ Exercices 4 à 6 : sans parenthèses<br>
+  ✓ Exercices 7 à 9 : diverses opérations<br>
+  ✓ Problèmes et problèmes supplémentaires</p>
+  <div class="btns">
+    <a class="btn" href="docs/fiche-exercices-ordre-des-operations-5e.pdf" target="_blank">📄 Ouvrir la fiche d’exercices</a>
+  </div>
+</article>
 
-<h2 class="section-title">🎯 JE PRÉPARE MON ÉVALUATION</h2>
+<h2 id="revision5" class="section-title">🎯 JE PRÉPARE MON ÉVALUATION</h2>
 <div class="grid">
 <article class="card"><h3>Plan de travail</h3><p class="muted">Vérifie que toutes les étapes de la séquence sont maîtrisées.</p><div class="btns"><a class="btn" href="docs/plan-de-travail-5e-ordre-des-operations.pdf" target="_blank">📋 Ouvrir</a></div></article>
 <article class="card"><h3>Évaluation blanche</h3><p class="muted">Calculs, problème du château fort et énigme pour réviser avant le contrôle.</p><div class="btns"><a class="btn" href="docs/evaluation-blanche-correction.pdf" target="_blank">📝 Évaluation blanche + correction</a></div></article>
 </div>
 
-<h2 class="section-title">🎮 JE TESTE MES CONNAISSANCES</h2>
+<h2 id="qcm5" class="section-title">🎮 JE TESTE MES CONNAISSANCES</h2>
 <article class="card quiz"><span class="badge">Test interactif</span><h3>Mini-QCM</h3><p><b>1.</b> 7 + 3 × 6 = ?</p><label><input type="radio" name="q1" value="a"> 60</label><label><input type="radio" name="q1" value="b"> 25</label><label><input type="radio" name="q1" value="c"> 42</label><p><b>2.</b> (24 − 8) ÷ 4 = ?</p><label><input type="radio" name="q2" value="a"> 4</label><label><input type="radio" name="q2" value="b"> 22</label><label><input type="radio" name="q2" value="c"> 2</label><p><b>3.</b> 28 ÷ 7 × 3 ÷ 12 = ?</p><label><input type="radio" name="q3" value="a"> 1</label><label><input type="radio" name="q3" value="b"> 7</label><label><input type="radio" name="q3" value="c"> 12</label><button class="btn" onclick="grade()">Voir mon score</button><div id="result" class="result"></div></article>
-</div></div></section>
+</div></section>
 <section id="4e" class="level"><div class="hero"><span class="badge">Classe de 4e</span><h2>Mes séquences</h2></div><div class="grid"><article class="card"><h3>Théorème de Pythagore</h3><p class="muted">La séquence complète arrive bientôt.</p></article></div></section><section id="3e" class="level"><div class="hero"><span class="badge">Classe de 3e</span><h2>Mes séquences</h2></div><div class="grid"><article class="card"><h3>Arithmétique</h3><p class="muted">La séquence complète arrive bientôt.</p></article><article class="card"><h3>Calcul littéral</h3><p class="muted">La séquence complète arrive bientôt.</p></article></div></section>
 </main><footer>Maths M. Berenguer • Espace pédagogique</footer><script>
 document.querySelectorAll('.tab').forEach(b=>b.onclick=()=>{document.querySelectorAll('.tab,.level').forEach(x=>x.classList.remove('active'));b.classList.add('active');document.getElementById(b.dataset.level).classList.add('active')});function openSeq(){fiveHome.style.display='none';seq1.classList.add('open');scrollTo(0,0)}function closeSeq(){seq1.classList.remove('open');fiveHome.style.display='block';scrollTo(0,0)}function grade(){let s=0;[['q1','b'],['q2','a'],['q3','a']].forEach(([q,a])=>{let e=document.querySelector('input[name="'+q+'"]:checked');if(e&&e.value===a)s++});let r=document.getElementById('result');r.textContent='Score : '+s+'/3'+(s===3?' — Bravo, les priorités sont maîtrisées !':s===2?' — Presque ! Revois la question manquée.':' — Reprends les règles puis réessaie.');r.className='result '+(s===3?'ok':'ko')}

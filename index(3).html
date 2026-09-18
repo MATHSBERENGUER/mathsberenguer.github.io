@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Mathématiques – M. Berenguer</title>
+<style>
+:root{--bg:#f5f7fb;--card:#fff;--ink:#182033;--muted:#667085;--line:#e5e7eb;--accent:#3457d5}
+*{box-sizing:border-box} body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:var(--bg);color:var(--ink)}
+header{background:#172554;color:white;padding:42px 20px}.wrap{max-width:1050px;margin:auto}
+h1{margin:0 0 8px;font-size:clamp(30px,5vw,48px)} header p{margin:0;color:#dbeafe;font-size:18px}
+nav{position:sticky;top:0;background:white;border-bottom:1px solid var(--line);z-index:3}
+nav .wrap{display:flex;gap:8px;padding:10px 20px;overflow:auto} button,.btn{border:0;border-radius:10px;padding:10px 14px;font-weight:700;cursor:pointer;text-decoration:none}
+.tab{background:#eef2ff;color:#253b80}.tab.active{background:#172554;color:#fff}
+main{padding:26px 20px 60px}.intro{background:white;border:1px solid var(--line);border-radius:16px;padding:20px;margin-bottom:20px}
+.level{display:none}.level.active{display:block}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(285px,1fr));gap:16px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:20px;box-shadow:0 4px 14px #1018280a}
+.badge{display:inline-block;background:#eef2ff;color:#3446a8;border-radius:999px;padding:5px 9px;font-size:12px;font-weight:800}
+h2{font-size:28px}h3{margin:10px 0 8px}.muted{color:var(--muted)}
+.actions{display:flex;flex-wrap:wrap;gap:8px;margin-top:15px}.btn{background:#172554;color:white}.btn.alt{background:#eef2ff;color:#253b80}
+.lesson{margin-top:14px;padding-top:14px;border-top:1px solid var(--line)} details{margin-top:8px}
+iframe{width:100%;aspect-ratio:16/9;border:0;border-radius:12px;background:#111}
+footer{text-align:center;color:var(--muted);padding:25px}
+</style>
+</head>
+<body>
+<header><div class="wrap"><h1>Mathématiques – M. Berenguer</h1><p>Cours, vidéos et entraînements pour progresser à son rythme.</p></div></header>
+<nav><div class="wrap">
+<button class="tab active" data-level="5e">5e</button>
+<button class="tab" data-level="4e">4e</button>
+<button class="tab" data-level="3e">3e</button>
+</div></nav>
+<main class="wrap">
+<div class="intro"><b>Bienvenue 👋</b><br><span class="muted">Choisis ton niveau puis une séquence. Les ressources seront ajoutées progressivement : cours, capsules vidéo, exercices et entraînements avant les évaluations.</span></div>
+
+<section id="5e" class="level active">
+<h2>Classe de 5e</h2><div class="grid">
+<article class="card"><span class="badge">Séquence 1</span><h3>Ordre des opérations</h3>
+<p class="muted">Parenthèses, priorités opératoires et expressions comportant plusieurs opérations.</p>
+<div class="lesson"><b>À maîtriser</b><p>• Calculer avec des parenthèses<br>• Calculer sans parenthèses<br>• Respecter les priorités<br>• Résoudre un petit problème avec une expression</p></div>
+<details><summary><b>🎥 Vidéos de la séquence</b></summary><p class="muted">Emplacement prêt pour tes vidéos YouTube. Remplace simplement l'identifiant dans le fichier HTML.</p>
+<iframe title="Vidéo ordre des opérations" src="about:blank"></iframe></details>
+<div class="actions"><a class="btn" href="#">📘 Cours</a><a class="btn alt" href="#">✏️ Exercices</a><a class="btn alt" href="#">🎯 Entraînement</a></div>
+</article>
+<article class="card"><span class="badge">À venir</span><h3>Prochaine séquence</h3><p class="muted">Cette carte pourra accueillir ton prochain chapitre de 5e.</p></article>
+</div></section>
+
+<section id="4e" class="level">
+<h2>Classe de 4e</h2><div class="grid">
+<article class="card"><span class="badge">Séquence</span><h3>Théorème de Pythagore</h3>
+<p class="muted">Identifier l'hypoténuse et calculer une longueur dans un triangle rectangle.</p>
+<div class="lesson"><b>À maîtriser</b><p>• Identifier l'hypoténuse<br>• Écrire l'égalité de Pythagore<br>• Calculer l'hypoténuse<br>• Calculer un côté de l'angle droit<br>• Rédiger et conclure avec l'unité</p></div>
+<details><summary><b>🎥 Vidéos de la séquence</b></summary><p class="muted">Prévu pour plusieurs capsules : comprendre le théorème, hypoténuse, côté adjacent et problèmes.</p>
+<iframe title="Vidéo Pythagore" src="about:blank"></iframe></details>
+<div class="actions"><a class="btn" href="#">📘 Cours</a><a class="btn alt" href="#">✏️ Exercices</a><a class="btn alt" href="#">🎯 Entraînement</a></div>
+</article>
+<article class="card"><span class="badge">À venir</span><h3>Prochaine séquence</h3><p class="muted">Ajoute ici le prochain chapitre de 4e.</p></article>
+</div></section>
+
+<section id="3e" class="level">
+<h2>Classe de 3e</h2><div class="grid">
+<article class="card"><span class="badge">Séquence</span><h3>Arithmétique</h3>
+<p class="muted">Divisibilité, nombres premiers et décomposition en facteurs premiers.</p>
+<div class="actions"><a class="btn" href="#">📘 Cours</a><a class="btn alt" href="#">✏️ Exercices</a><a class="btn alt" href="#">🎯 Entraînement</a></div>
+</article>
+<article class="card"><span class="badge">Séquence</span><h3>Calcul littéral</h3><p class="muted">Développer, réduire et factoriser des expressions.</p>
+<div class="actions"><a class="btn" href="#">📘 Cours</a><a class="btn alt" href="#">✏️ Exercices</a></div></article>
+</div></section>
+</main>
+<footer>Mathématiques – M. Berenguer • Espace pédagogique</footer>
+<script>
+document.querySelectorAll('.tab').forEach(b=>b.addEventListener('click',()=>{
+ document.querySelectorAll('.tab,.level').forEach(x=>x.classList.remove('active'));
+ b.classList.add('active'); document.getElementById(b.dataset.level).classList.add('active');
+}));
+document.querySelectorAll('a[href="#"]').forEach(a=>a.addEventListener('click',e=>{e.preventDefault();alert("Ressource à ajouter : la structure du site est prête.");}));
+</script>
+</body></html>

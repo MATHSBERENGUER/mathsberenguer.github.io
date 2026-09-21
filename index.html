@@ -370,7 +370,119 @@ body.home-mode>header,body.home-mode>nav,body.home-mode>main,body.home-mode>foot
 </div>
 
 </section>
-<section id="4e" class="level"><div class="hero"><span class="badge">Classe de 4e</span><h2>Mes séquences</h2></div><div class="grid"><article class="card"><h3>Théorème de Pythagore</h3><p class="muted">La séquence complète arrive bientôt.</p></article></div></section><section id="3e" class="level"><div class="hero"><span class="badge">Classe de 3e</span><h2>Mes séquences</h2></div><div class="grid"><article class="card"><h3>Arithmétique</h3><p class="muted">La séquence complète arrive bientôt.</p></article><article class="card"><h3>Calcul littéral</h3><p class="muted">La séquence complète arrive bientôt.</p></article></div></section>
+<section id="4e" class="level">
+  <div id="fourHome">
+    <div class="hero">
+      <span class="badge">Niveau 4e</span>
+      <h2>Classe de 4e</h2>
+      <p>Retrouve ici les cours, activités, vidéos, exercices et révisions.</p>
+    </div>
+    <h2 class="section-title">Mes séquences</h2>
+    <div class="grid">
+      <article class="card"><span class="badge">Séquence 1</span><h3>📐 Théorème de Pythagore</h3><p>Comprendre le théorème et calculer une longueur dans un triangle rectangle.</p><div class="btns"><button class="btn" onclick="open4Seq1()">Commencer la séquence →</button></div></article>
+      <article class="card"><span class="badge">Séquence 2</span><h3>🔍 Réciproque du théorème de Pythagore</h3><p>Déterminer, à partir des longueurs de ses côtés, si un triangle est rectangle.</p><div class="btns"><button class="btn" onclick="open4Seq2()">Commencer la séquence →</button></div></article>
+    </div>
+  </div>
+
+  <div id="fourSeq1" class="sequence">
+    <button class="btn light back" onclick="close4Seq1()">← Retour aux séquences</button>
+    <div class="hero"><span class="badge">4e • Séquence 1</span><h2>📐 Théorème de Pythagore</h2><p>Identifier l’hypoténuse, écrire l’égalité de Pythagore et calculer une longueur dans un triangle rectangle.</p></div>
+    <div class="resource-nav" style="grid-template-columns:repeat(auto-fit,minmax(145px,1fr))">
+      <a href="#pythAct">🧩 ACTIVITÉS</a><a href="#pythCours">📘 COURS</a><a href="#pythVideos">🎥 VIDÉOS</a><a class="exercise-link" href="#pythExos">✏️ EXERCICES</a><a href="#pythRev">🎯 RÉVISIONS</a><a href="#pythQcm">🎮 QCM</a>
+    </div>
+
+    <h2 id="pythAct" class="section-title">🧩 ACTIVITÉS D’INTRODUCTION</h2>
+    <div class="grid">
+      <article class="card"><span class="badge">Activité 1</span><h3>🏛️ À la découverte de Pythagore</h3><p class="muted">Une activité visuelle autour du théorème et de sa représentation géométrique.</p><div class="btns"><a class="btn" href="docs/intro-4e-theoreme-pythagore.pdf" target="_blank">Ouvrir</a></div></article>
+      <article class="card"><span class="badge">Activité 2</span><h3>📐 Une longueur mystérieuse</h3><p class="muted">Un triangle rectangle de côtés 5 et 12 pour faire émerger la relation de Pythagore.</p><div class="btns"><a class="btn" href="docs/intro-4e-theoreme-pythagore2.pdf" target="_blank">Ouvrir</a></div></article>
+      <article class="card"><span class="badge">Activité 3</span><h3>🔎 Calculer la longueur manquante</h3><p class="muted">Réinvestir la découverte sur plusieurs triangles rectangles.</p><div class="btns"><a class="btn" href="docs/intro-4e-theoreme-pythagore3.pdf" target="_blank">Ouvrir</a></div></article>
+      <article class="card"><span class="badge">Culture mathématique</span><h3>🏺 Un peu d’histoire !</h3><p class="muted">Euclide, les Éléments et une découverte du texte grec ancien associé au théorème.</p><div class="btns"><a class="btn" href="docs/intro-4e-theoreme-pythagore4.pdf" target="_blank">Ouvrir</a></div></article>
+    </div>
+
+    <h2 id="pythCours" class="section-title">📘 COURS</h2>
+    <div class="grid">
+      <article class="card"><span class="badge">I</span><h3>Pré-requis</h3><p>Reconnaître l’hypoténuse et comprendre l’écriture d’un nombre au carré.</p></article>
+      <article class="card"><span class="badge">II</span><h3>Le théorème</h3><p>Dans un triangle rectangle, le carré de l’hypoténuse est égal à la somme des carrés des deux autres côtés.</p></article>
+      <article class="card"><span class="badge">III-a</span><h3>Calculer l’hypoténuse</h3><p>Écrire l’égalité de Pythagore puis utiliser la racine carrée pour obtenir la longueur cherchée.</p></article>
+      <article class="card"><span class="badge">III-b</span><h3>Calculer un côté adjacent</h3><p>Isoler le carré de la longueur inconnue avant d’utiliser la racine carrée.</p></article>
+    </div>
+    <article class="card" style="margin-top:14px"><h3>📘 Cours complet</h3><div class="btns"><a class="btn" href="docs/cours-4e-theoreme-pythagore.pdf" target="_blank">Ouvrir le cours</a></div></article>
+
+    <h2 id="pythVideos" class="section-title">🎥 VIDÉOS</h2>
+    <div class="grid">
+      <article class="card"><span class="badge">Vidéo 1</span><h3>Hypoténuse et théorème</h3><div class="btns"><a class="btn" href="videos/video1-4e-pythagore.mp4" target="_blank">▶️ Regarder</a></div></article>
+      <article class="card"><span class="badge">Vidéo 2</span><h3>Calculer l’hypoténuse</h3><div class="btns"><a class="btn" href="videos/video2-4e-pythagore.mp4" target="_blank">▶️ Regarder</a></div></article>
+      <article class="card"><span class="badge">Vidéo 3</span><h3>Calculer un côté adjacent</h3><div class="btns"><a class="btn" href="videos/video3-4e-pythagore.mp4" target="_blank">▶️ Regarder</a></div></article>
+    </div>
+
+    <h2 id="pythExos" class="section-title exercise-title">✏️ EXERCICES</h2>
+    <div class="grid">
+      <article class="card"><span class="badge">Exercices 1 à 4</span><h3>Comprendre le théorème</h3><p class="muted">Hypoténuse, carrés et égalité de Pythagore.</p><div class="btns"><a class="btn" href="docs/exercices-4e-pythagore-comprendre.pdf" target="_blank">Ouvrir</a></div></article>
+      <article class="card"><span class="badge">Exercices 5 à 7</span><h3>Calculer l’hypoténuse</h3><p class="muted">Calculs et constructions de triangles rectangles.</p><div class="btns"><a class="btn" href="docs/exercices-4e-pythagore-hypotenuse.pdf" target="_blank">Ouvrir</a></div></article>
+      <article class="card"><span class="badge">Exercices 8 et 9</span><h3>Calculer un côté adjacent</h3><p class="muted">Utiliser Pythagore lorsqu’on connaît l’hypoténuse.</p><div class="btns"><a class="btn" href="docs/exercices-4e-pythagore-cote-adjacent.pdf" target="_blank">Ouvrir</a></div></article>
+      <article class="card"><span class="badge">Problèmes</span><h3>Prisme • Cric • Écran</h3><p class="muted">Trois situations concrètes pour réinvestir le théorème.</p><div class="btns"><a class="btn" href="docs/problemes-4e-pythagore.pdf" target="_blank">Ouvrir</a></div></article>
+    </div>
+
+    <h2 id="pythRev" class="section-title">🎯 JE PRÉPARE MON ÉVALUATION</h2>
+    <div class="grid">
+      <article class="card"><h3>✅ Correction des exercices</h3><p class="muted">Vérifier la rédaction et les différentes étapes des calculs.</p><div class="btns"><a class="btn" href="docs/correction-exercices-4e-pythagore.pdf" target="_blank">Voir la correction</a></div></article>
+      <article class="card"><h3>✍️ Rédaction à retenir</h3><p>Dans le triangle … rectangle en …,<br><b>d’après le théorème de Pythagore :</b><br>hypoténuse² = côté² + côté².</p></article>
+    </div>
+
+    <h2 id="pythQcm" class="section-title">🎮 JE TESTE MES CONNAISSANCES</h2>
+    <article class="card quiz"><span class="badge">Mini-QCM</span><h3>Théorème de Pythagore</h3>
+      <p><b>1.</b> Dans un triangle rectangle, l’hypoténuse est :</p>
+      <label><input type="radio" name="p1" value="a"> le côté opposé à l’angle droit</label><label><input type="radio" name="p1" value="b"> un des côtés de l’angle droit</label>
+      <p><b>2.</b> ABC est rectangle en B. L’égalité correcte est :</p>
+      <label><input type="radio" name="p2" value="a"> AC² = AB² + BC²</label><label><input type="radio" name="p2" value="b"> AB² = AC² + BC²</label>
+      <p><b>3.</b> Si les côtés de l’angle droit mesurent 5 et 12, l’hypoténuse mesure :</p>
+      <label><input type="radio" name="p3" value="a"> 13</label><label><input type="radio" name="p3" value="b"> 17</label><label><input type="radio" name="p3" value="c"> 7</label>
+      <button class="btn" onclick="gradePyth()">Voir mon score</button><div id="resultPyth" class="result"></div>
+    </article>
+  </div>
+
+  <div id="fourSeq2" class="sequence">
+    <button class="btn light back" onclick="close4Seq2()">← Retour aux séquences</button>
+    <div class="hero"><span class="badge">4e • Séquence 2</span><h2>🔍 Réciproque du théorème de Pythagore</h2><p>Utiliser les longueurs des trois côtés pour déterminer si un triangle est rectangle.</p></div>
+    <div class="resource-nav" style="grid-template-columns:repeat(auto-fit,minmax(145px,1fr))">
+      <a href="#recAct">🧩 ACTIVITÉ</a><a href="#recCours">📘 MÉTHODE</a><a href="#recVideo">🎥 VIDÉO</a><a class="exercise-link" href="#recExos">✏️ EXERCICES</a><a href="#recRev">🎯 RÉVISIONS</a><a href="#recQcm">🎮 QCM</a>
+    </div>
+
+    <h2 id="recAct" class="section-title">🧩 ACTIVITÉ D’INTRODUCTION</h2>
+    <article class="card"><span class="badge">Découverte</span><h3>❓ Rectangle ou non ?</h3><p class="muted">Construire trois triangles à partir de leurs longueurs puis chercher lesquels sont rectangles.</p><div class="btns"><a class="btn" href="docs/activite-4e-reciproque-pythagore.pdf" target="_blank">Ouvrir l’activité</a></div></article>
+
+    <h2 id="recCours" class="section-title">📘 MÉTHODE</h2>
+    <div class="grid">
+      <article class="card"><span class="badge">Étape 1</span><h3>Repérer le plus grand côté</h3><p>Si le triangle est rectangle, ce côté sera son hypoténuse.</p></article>
+      <article class="card"><span class="badge">Étape 2</span><h3>Comparer les carrés</h3><p>Calculer séparément le carré du plus grand côté et la somme des carrés des deux autres côtés.</p></article>
+      <article class="card"><span class="badge">Étape 3</span><h3>Conclure</h3><p>Si les deux résultats sont égaux, utiliser la réciproque du théorème de Pythagore pour conclure que le triangle est rectangle.</p></article>
+    </div>
+
+    <h2 id="recVideo" class="section-title">🎥 VIDÉO</h2>
+    <article class="card"><span class="badge">Vidéo</span><h3>Réciproque du théorème de Pythagore</h3><div class="btns"><a class="btn" href="videos/video-4e-reciproque-pythagore.mp4" target="_blank">▶️ Regarder</a></div></article>
+
+    <h2 id="recExos" class="section-title exercise-title">✏️ EXERCICES</h2>
+    <article class="card"><span class="badge">Exercices 1 à 4</span><h3>Triangle rectangle ou non ?</h3><p class="muted">Triangles à construire, étagère à vérifier et figure composée : appliquer la réciproque avec une rédaction complète.</p><div class="btns"><a class="btn" href="docs/exercices-4e-reciproque-pythagore.pdf" target="_blank">Ouvrir les exercices</a></div></article>
+
+    <h2 id="recRev" class="section-title">🎯 JE PRÉPARE MON ÉVALUATION</h2>
+    <div class="grid">
+      <article class="card"><h3>📄 Fiche de révision</h3><p class="muted">Révision de l’évaluation : Pythagore et réciproque, opérations sur les relatifs et Scratch.</p><div class="btns"><a class="btn" href="docs/fiche-revision-4e.pdf" target="_blank">Ouvrir</a></div></article>
+      <article class="card"><h3>✅ Correction</h3><p class="muted">Correction détaillée de la fiche de révision.</p><div class="btns"><a class="btn" href="docs/fiche-revision-4e-CORRECTION.pdf" target="_blank">Voir la correction</a></div></article>
+      <article class="card"><h3>✍️ Rédaction à retenir</h3><p>On identifie d’abord le plus grand côté, on compare les carrés, puis on conclut explicitement avec <b>« d’après la réciproque du théorème de Pythagore »</b>.</p></article>
+    </div>
+
+    <h2 id="recQcm" class="section-title">🎮 JE TESTE MES CONNAISSANCES</h2>
+    <article class="card quiz"><span class="badge">Mini-QCM</span><h3>Réciproque de Pythagore</h3>
+      <p><b>1.</b> Pour utiliser la réciproque, on commence par :</p>
+      <label><input type="radio" name="r1" value="a"> repérer le plus grand côté</label><label><input type="radio" name="r1" value="b"> choisir n’importe quel côté</label>
+      <p><b>2.</b> Un triangle de côtés 6, 8 et 10 est-il rectangle ?</p>
+      <label><input type="radio" name="r2" value="a"> oui</label><label><input type="radio" name="r2" value="b"> non</label>
+      <p><b>3.</b> Si c est le plus grand côté et c² = a² + b², alors :</p>
+      <label><input type="radio" name="r3" value="a"> le triangle est rectangle</label><label><input type="radio" name="r3" value="b"> on ne peut rien conclure</label>
+      <button class="btn" onclick="gradeRec()">Voir mon score</button><div id="resultRec" class="result"></div>
+    </article>
+  </div>
+</section><section id="3e" class="level"><div class="hero"><span class="badge">Classe de 3e</span><h2>Mes séquences</h2></div><div class="grid"><article class="card"><h3>Arithmétique</h3><p class="muted">La séquence complète arrive bientôt.</p></article><article class="card"><h3>Calcul littéral</h3><p class="muted">La séquence complète arrive bientôt.</p></article></div></section>
 </main><footer>Maths M. Berenguer • Espace pédagogique</footer><script>
 function goHome(){
  document.body.classList.add('home-mode');
@@ -406,6 +518,12 @@ function closeSeq3(){document.getElementById('seq3').classList.remove('open');do
 function gradeTri(){let s=0;[['t1','b'],['t2','a'],['t3','c']].forEach(([q,a])=>{let e=document.querySelector('input[name="'+q+'"]:checked');if(e&&e.value===a)s++});let r=document.getElementById('resultTri');r.textContent='Score : '+s+'/3'+(s===3?' — Bravo !':s===2?' — Presque !':' — Reprends le cours puis réessaie.');r.className='result '+(s===3?'ok':'ko')}
 function openSeq4(){document.getElementById('fiveHome').style.display='none';document.getElementById('seq1').classList.remove('open');document.getElementById('seq2').classList.remove('open');document.getElementById('seq3').classList.remove('open');document.getElementById('seq4').classList.add('open');window.scrollTo(0,0)}
 function closeSeq4(){document.getElementById('seq4').classList.remove('open');document.getElementById('fiveHome').style.display='block';window.scrollTo(0,0)}
+function open4Seq1(){document.getElementById('fourHome').style.display='none';document.getElementById('fourSeq2').classList.remove('open');document.getElementById('fourSeq1').classList.add('open');window.scrollTo(0,0)}
+function close4Seq1(){document.getElementById('fourSeq1').classList.remove('open');document.getElementById('fourHome').style.display='block';window.scrollTo(0,0)}
+function open4Seq2(){document.getElementById('fourHome').style.display='none';document.getElementById('fourSeq1').classList.remove('open');document.getElementById('fourSeq2').classList.add('open');window.scrollTo(0,0)}
+function close4Seq2(){document.getElementById('fourSeq2').classList.remove('open');document.getElementById('fourHome').style.display='block';window.scrollTo(0,0)}
+function gradePyth(){let s=0;[['p1','a'],['p2','a'],['p3','a']].forEach(([q,a])=>{let e=document.querySelector('input[name="'+q+'"]:checked');if(e&&e.value===a)s++});let r=document.getElementById('resultPyth');r.textContent='Score : '+s+'/3'+(s===3?' — Bravo !':s===2?' — Presque !':' — Reprends le cours puis réessaie.');r.className='result '+(s===3?'ok':'ko')}
+function gradeRec(){let s=0;[['r1','a'],['r2','a'],['r3','a']].forEach(([q,a])=>{let e=document.querySelector('input[name="'+q+'"]:checked');if(e&&e.value===a)s++});let r=document.getElementById('resultRec');r.textContent='Score : '+s+'/3'+(s===3?' — Bravo !':s===2?' — Presque !':' — Reprends la méthode puis réessaie.');r.className='result '+(s===3?'ok':'ko')}
 function gradeFrac(){let s=0;[['f1','a'],['f2','a'],['f3','b']].forEach(([q,a])=>{let e=document.querySelector('input[name="'+q+'"]:checked');if(e&&e.value===a)s++});let r=document.getElementById('resultFrac');r.textContent='Score : '+s+'/3'+(s===3?' — Bravo !':s===2?' — Presque !':' — Reprends le cours puis réessaie.');r.className='result '+(s===3?'ok':'ko')}
 function gradeGeo(){let s=0;[['g1','b'],['g2','a'],['g3','c']].forEach(([q,a])=>{let e=document.querySelector('input[name="'+q+'"]:checked');if(e&&e.value===a)s++});let r=document.getElementById('resultGeo');r.textContent='Score : '+s+'/3'+(s===3?' — Bravo !':s===2?' — Presque !':' — Reprends le cours puis réessaie.');r.className='result '+(s===3?'ok':'ko')}
 function grade(){let s=0;[['q1','b'],['q2','a'],['q3','a']].forEach(([q,a])=>{let e=document.querySelector('input[name="'+q+'"]:checked');if(e&&e.value===a)s++});let r=document.getElementById('result');r.textContent='Score : '+s+'/3'+(s===3?' — Bravo, les priorités sont maîtrisées !':s===2?' — Presque ! Revois la question manquée.':' — Reprends les règles puis réessaie.');r.className='result '+(s===3?'ok':'ko')}

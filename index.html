@@ -482,7 +482,113 @@ body.home-mode>header,body.home-mode>nav,body.home-mode>main,body.home-mode>foot
       <button class="btn" onclick="gradeRec()">Voir mon score</button><div id="resultRec" class="result"></div>
     </article>
   </div>
-</section><section id="3e" class="level"><div class="hero"><span class="badge">Classe de 3e</span><h2>Mes séquences</h2></div><div class="grid"><article class="card"><h3>Arithmétique</h3><p class="muted">La séquence complète arrive bientôt.</p></article><article class="card"><h3>Calcul littéral</h3><p class="muted">La séquence complète arrive bientôt.</p></article></div></section>
+</section><section id="3e" class="level">
+  <div id="threeHome">
+    <div class="hero">
+      <span class="badge">Niveau 3e</span>
+      <h2>Classe de 3e</h2>
+      <p>Cours, vidéos, exercices et entraînements pour progresser et préparer le brevet.</p>
+    </div>
+    <h2 class="section-title">Mes séquences</h2>
+    <div class="grid">
+      <article class="card"><span class="badge">Séquence 1</span><h3>🔢 Arithmétique</h3><p>Multiples et diviseurs, critères de divisibilité, division euclidienne, nombres premiers, décomposition et PGCD.</p><div class="btns"><button class="btn" onclick="open3Seq1()">Commencer la séquence →</button></div></article>
+      <article class="card"><span class="badge">Séquence 2</span><h3>📐 Pythagore et réciproque</h3><p>Rappels de 4e : calculer une longueur avec Pythagore et démontrer qu’un triangle est rectangle.</p><div class="btns"><button class="btn" onclick="open3Seq2()">Commencer la séquence →</button></div></article>
+    </div>
+  </div>
+
+  <div id="threeSeq1" class="sequence">
+    <button class="btn light back" onclick="close3Seq1()">← Retour aux séquences</button>
+    <div class="hero"><span class="badge">3e • Séquence 1</span><h2>🔢 Arithmétique</h2><p>Multiples, diviseurs, divisibilité, division euclidienne, nombres premiers, facteurs premiers, fractions irréductibles et PGCD.</p></div>
+    <div class="resource-nav" style="grid-template-columns:repeat(auto-fit,minmax(145px,1fr))">
+      <a href="#arithCours">📘 COURS</a><a href="#arithVideos">🎥 VIDÉOS</a><a class="exercise-link" href="#arithExos">✏️ EXERCICES</a><a href="#arithRev">🎯 ÉVALUATION</a><a href="#arithQcm">🎮 QCM</a>
+    </div>
+
+    <h2 id="arithCours" class="section-title">📘 COURS</h2>
+    <div class="grid">
+      <article class="card"><span class="badge">I-a</span><h3>Multiples et diviseurs</h3><p>Reconnaître les diviseurs et les multiples d’un nombre entier.</p></article>
+      <article class="card"><span class="badge">I-b</span><h3>Critères de divisibilité</h3><p>Utiliser les critères de divisibilité par 2, 3, 4, 5, 6 et 9.</p></article>
+      <article class="card"><span class="badge">I-c</span><h3>Division euclidienne</h3><p>Écrire a = b × q + r avec 0 ≤ r &lt; b et identifier dividende, diviseur, quotient et reste.</p></article>
+      <article class="card"><span class="badge">II</span><h3>Nombres premiers</h3><p>Reconnaître un nombre premier et connaître les premiers exemples.</p></article>
+      <article class="card"><span class="badge">III-a</span><h3>Facteurs premiers</h3><p>Décomposer un entier en produit de facteurs premiers.</p></article>
+      <article class="card"><span class="badge">III-b</span><h3>Fractions irréductibles</h3><p>Utiliser les facteurs premiers pour simplifier une fraction.</p></article>
+    </div>
+    <article class="card" style="margin-top:14px"><h3>📘 Cours complet — Arithmétique</h3><div class="btns"><a class="btn" href="docs/cours-3e-arithmetique.pdf" target="_blank">Ouvrir le cours</a></div></article>
+
+    <h2 id="arithVideos" class="section-title">🎥 VIDÉOS</h2>
+    <div class="grid">
+      <article class="card"><span class="badge">Vidéo 1</span><h3>Multiples et diviseurs</h3><div class="btns"><a class="btn" href="videos/video1-3e-arithmetique.mp4" target="_blank">▶️ Regarder</a></div></article>
+      <article class="card"><span class="badge">Vidéo 2</span><h3>Critères de divisibilité</h3><div class="btns"><a class="btn" href="videos/video2-3e-arithmetique.mp4" target="_blank">▶️ Regarder</a></div></article>
+      <article class="card"><span class="badge">Vidéo 3</span><h3>Division euclidienne</h3><div class="btns"><a class="btn" href="videos/video3-3e-arithmetique.mp4" target="_blank">▶️ Regarder</a></div></article>
+      <article class="card"><span class="badge">Vidéo 4</span><h3>Nombres premiers</h3><div class="btns"><a class="btn" href="videos/video4-3e-arithmetique.mp4" target="_blank">▶️ Regarder</a></div></article>
+      <article class="card"><span class="badge">Vidéo 5</span><h3>Décomposition en facteurs premiers</h3><div class="btns"><a class="btn" href="videos/video5-3e-arithmetique.mp4" target="_blank">▶️ Regarder</a></div></article>
+    </div>
+
+    <h2 id="arithExos" class="section-title exercise-title">✏️ EXERCICES</h2>
+    <div class="grid">
+      <article class="card"><span class="badge">Exercices 1 à 4</span><h3>Multiples, diviseurs et divisibilité</h3><p class="muted">Trouver des multiples/diviseurs et appliquer les critères de divisibilité.</p><div class="btns"><a class="btn" href="docs/exercices-3e-arithmetique-1.pdf" target="_blank">Ouvrir</a></div></article>
+      <article class="card"><span class="badge">Exercices 5 à 8</span><h3>Division euclidienne</h3><p class="muted">Barbe-Noire, quotient, reste et divisions euclidiennes posées.</p><div class="btns"><a class="btn" href="docs/exercices-3e-arithmetique-2.pdf" target="_blank">Ouvrir</a></div></article>
+      <article class="card"><span class="badge">Exercices 9 à 11</span><h3>Nombres premiers</h3><p class="muted">Reconnaître et rechercher des nombres premiers.</p><div class="btns"><a class="btn" href="docs/exercices-3e-arithmetique-3.pdf" target="_blank">Ouvrir</a></div></article>
+      <article class="card"><span class="badge">Exercices 12 à 14</span><h3>Décomposition en facteurs premiers</h3><p class="muted">Décomposer des nombres et faire apparaître le PGCD.</p><div class="btns"><a class="btn" href="docs/exercices-3e-arithmetique-4.pdf" target="_blank">Ouvrir</a></div></article>
+      <article class="card"><span class="badge">Exercices 15 à 17</span><h3>Fractions irréductibles</h3><p class="muted">Simplifier des fractions grâce aux facteurs premiers et résoudre un problème.</p><div class="btns"><a class="btn" href="docs/exercices-3e-arithmetique-5.pdf" target="_blank">Ouvrir</a></div></article>
+      <article class="card"><span class="badge">Exercices 18 à 20</span><h3>PGCD</h3><p class="muted">Calculer un PGCD et résoudre des problèmes de partage ou de découpage.</p><div class="btns"><a class="btn" href="docs/exercices-3e-arithmetique-6.pdf" target="_blank">Ouvrir</a></div></article>
+    </div>
+
+    <h2 id="arithRev" class="section-title">🎯 JE PRÉPARE MON ÉVALUATION</h2>
+    <div class="grid">
+      <article class="card"><h3>📋 Plan de travail</h3><p class="muted">La progression complète de la séquence, des exercices 1 à 20 jusqu’à l’application Arithmética.</p><div class="btns"><a class="btn" href="docs/plan-de-travail-3e-arithmetique.pdf" target="_blank">Ouvrir</a></div></article>
+      <article class="card"><h3>📝 Évaluation blanche</h3><p class="muted">Diviseurs, divisibilité, division euclidienne, fractions irréductibles et problème de PGCD.</p><div class="btns"><a class="btn" href="docs/plan-de-travail-3e-arithmetique.pdf" target="_blank">S’entraîner</a></div></article>
+    </div>
+
+    <h2 id="arithQcm" class="section-title">🎮 JE TESTE MES CONNAISSANCES</h2>
+    <article class="card quiz"><span class="badge">Mini-QCM</span><h3>Arithmétique</h3>
+      <p><b>1.</b> Lequel est un diviseur de 56 ?</p><label><input type="radio" name="a31" value="a"> 7</label><label><input type="radio" name="a31" value="b"> 9</label>
+      <p><b>2.</b> Dans 652 = 24 × 27 + 4, le reste est :</p><label><input type="radio" name="a32" value="a"> 27</label><label><input type="radio" name="a32" value="b"> 4</label>
+      <p><b>3.</b> Quel nombre est premier ?</p><label><input type="radio" name="a33" value="a"> 31</label><label><input type="radio" name="a33" value="b"> 21</label>
+      <button class="btn" onclick="gradeArith3()">Voir mon score</button><div id="resultArith3" class="result"></div>
+    </article>
+  </div>
+
+  <div id="threeSeq2" class="sequence">
+    <button class="btn light back" onclick="close3Seq2()">← Retour aux séquences</button>
+    <div class="hero"><span class="badge">3e • Séquence 2</span><h2>📐 Pythagore et réciproque</h2><p>Rappels de 4e : calculer une longueur et démontrer qu’un triangle est rectangle.</p></div>
+    <div class="resource-nav" style="grid-template-columns:repeat(auto-fit,minmax(145px,1fr))">
+      <a href="#pyth3Cours">📘 COURS</a><a href="#pyth3Videos">🎥 VIDÉOS</a><a class="exercise-link" href="#pyth3Exos">✏️ EXERCICES</a><a href="#pyth3Dnb">🏆 DNB</a><a href="#pyth3Qcm">🎮 QCM</a>
+    </div>
+
+    <h2 id="pyth3Cours" class="section-title">📘 RAPPELS DE 4e</h2>
+    <div class="grid">
+      <article class="card"><span class="badge">I</span><h3>Théorème de Pythagore</h3><p>Dans un triangle rectangle, le carré de l’hypoténuse est égal à la somme des carrés des deux autres côtés. Il permet de calculer une longueur.</p></article>
+      <article class="card"><span class="badge">II</span><h3>Réciproque du théorème</h3><p>Si le carré du plus grand côté est égal à la somme des carrés des deux autres côtés, alors le triangle est rectangle.</p></article>
+    </div>
+    <article class="card" style="margin-top:14px"><h3>📘 Cours complet</h3><div class="btns"><a class="btn" href="docs/cours-3e-pythagore-rappel.pdf" target="_blank">Ouvrir le cours</a></div></article>
+
+    <h2 id="pyth3Videos" class="section-title">🎥 VIDÉOS</h2>
+    <div class="grid">
+      <article class="card"><span class="badge">Pythagore</span><h3>Vidéo 1 — Rappels</h3><div class="btns"><a class="btn" href="videos/video1-3e-pythagore.mp4" target="_blank">▶️ Regarder</a></div></article>
+      <article class="card"><span class="badge">Pythagore</span><h3>Vidéo 2 — Calcul d’une longueur</h3><div class="btns"><a class="btn" href="videos/video2-3e-pythagore.mp4" target="_blank">▶️ Regarder</a></div></article>
+      <article class="card"><span class="badge">Pythagore</span><h3>Vidéo 3 — Méthode</h3><div class="btns"><a class="btn" href="videos/video3-3e-pythagore.mp4" target="_blank">▶️ Regarder</a></div></article>
+      <article class="card"><span class="badge">Réciproque</span><h3>Vidéo 4 — Démontrer qu’un triangle est rectangle</h3><div class="btns"><a class="btn" href="videos/video4-3e-pythagore-reciproque.mp4" target="_blank">▶️ Regarder</a></div></article>
+    </div>
+
+    <h2 id="pyth3Exos" class="section-title exercise-title">✏️ EXERCICES</h2>
+    <div class="grid">
+      <article class="card"><span class="badge">Exercices 1 à 4</span><h3>Théorème de Pythagore</h3><p class="muted">Calculs de longueurs, construction et problème des panneaux solaires.</p><div class="btns"><a class="btn" href="docs/exercices-3e-pythagore-rappel.pdf" target="_blank">Ouvrir</a></div></article>
+      <article class="card"><span class="badge">Exercices 5 à 7</span><h3>Réciproque de Pythagore</h3><p class="muted">Déterminer si des triangles sont rectangles et rédiger une démonstration complète.</p><div class="btns"><a class="btn" href="docs/exercices-3e-pythagore-rappel.pdf" target="_blank">Ouvrir</a></div></article>
+      <article class="card"><span class="badge">Correction incluse</span><h3>✅ Je vérifie mes exercices</h3><p class="muted">Les pages suivantes du même document contiennent les corrections détaillées.</p><div class="btns"><a class="btn" href="docs/exercices-3e-pythagore-rappel.pdf" target="_blank">Voir le document</a></div></article>
+    </div>
+
+    <h2 id="pyth3Dnb" class="section-title">🏆 ENTRAÎNEMENT DNB</h2>
+    <article class="card"><span class="badge">Amérique du Sud 2013</span><h3>🌾 Le champ de Jean-Michel</h3><p class="muted">Un exercice complet mêlant périmètre, réciproque de Pythagore, aire et coût d’une clôture. La correction est incluse dans le PDF.</p><div class="btns"><a class="btn" href="docs/exercices-3e-pythagore-rappel.pdf" target="_blank">Faire l’exercice DNB</a></div></article>
+
+    <h2 id="pyth3Qcm" class="section-title">🎮 JE TESTE MES CONNAISSANCES</h2>
+    <article class="card quiz"><span class="badge">Mini-QCM</span><h3>Pythagore & réciproque</h3>
+      <p><b>1.</b> Le théorème de Pythagore sert notamment à :</p><label><input type="radio" name="p31" value="a"> calculer une longueur dans un triangle rectangle</label><label><input type="radio" name="p31" value="b"> prouver directement qu’un triangle est rectangle</label>
+      <p><b>2.</b> Pour appliquer la réciproque, on compare :</p><label><input type="radio" name="p32" value="a"> le carré du plus grand côté avec la somme des carrés des deux autres</label><label><input type="radio" name="p32" value="b"> les trois longueurs directement</label>
+      <p><b>3.</b> Un triangle de côtés 6 ; 8 ; 10 est :</p><label><input type="radio" name="p33" value="a"> rectangle</label><label><input type="radio" name="p33" value="b"> non rectangle</label>
+      <button class="btn" onclick="gradePyth3()">Voir mon score</button><div id="resultPyth3" class="result"></div>
+    </article>
+  </div>
+</section>
 </main><footer>Maths M. Berenguer • Espace pédagogique</footer><script>
 function goHome(){
  document.body.classList.add('home-mode');
@@ -522,6 +628,12 @@ function open4Seq1(){document.getElementById('fourHome').style.display='none';do
 function close4Seq1(){document.getElementById('fourSeq1').classList.remove('open');document.getElementById('fourHome').style.display='block';window.scrollTo(0,0)}
 function open4Seq2(){document.getElementById('fourHome').style.display='none';document.getElementById('fourSeq1').classList.remove('open');document.getElementById('fourSeq2').classList.add('open');window.scrollTo(0,0)}
 function close4Seq2(){document.getElementById('fourSeq2').classList.remove('open');document.getElementById('fourHome').style.display='block';window.scrollTo(0,0)}
+function open3Seq1(){document.getElementById('threeHome').style.display='none';document.getElementById('threeSeq2').classList.remove('open');document.getElementById('threeSeq1').classList.add('open');window.scrollTo(0,0)}
+function close3Seq1(){document.getElementById('threeSeq1').classList.remove('open');document.getElementById('threeHome').style.display='block';window.scrollTo(0,0)}
+function open3Seq2(){document.getElementById('threeHome').style.display='none';document.getElementById('threeSeq1').classList.remove('open');document.getElementById('threeSeq2').classList.add('open');window.scrollTo(0,0)}
+function close3Seq2(){document.getElementById('threeSeq2').classList.remove('open');document.getElementById('threeHome').style.display='block';window.scrollTo(0,0)}
+function gradeArith3(){let s=0;[['a31','a'],['a32','b'],['a33','a']].forEach(([q,a])=>{let e=document.querySelector('input[name="'+q+'"]:checked');if(e&&e.value===a)s++});let r=document.getElementById('resultArith3');r.textContent='Score : '+s+'/3'+(s===3?' — Bravo !':s===2?' — Presque !':' — Reprends le cours puis réessaie.');r.className='result '+(s===3?'ok':'ko')}
+function gradePyth3(){let s=0;[['p31','a'],['p32','a'],['p33','a']].forEach(([q,a])=>{let e=document.querySelector('input[name="'+q+'"]:checked');if(e&&e.value===a)s++});let r=document.getElementById('resultPyth3');r.textContent='Score : '+s+'/3'+(s===3?' — Bravo !':s===2?' — Presque !':' — Reprends le cours puis réessaie.');r.className='result '+(s===3?'ok':'ko')}
 function gradePyth(){let s=0;[['p1','a'],['p2','a'],['p3','a']].forEach(([q,a])=>{let e=document.querySelector('input[name="'+q+'"]:checked');if(e&&e.value===a)s++});let r=document.getElementById('resultPyth');r.textContent='Score : '+s+'/3'+(s===3?' — Bravo !':s===2?' — Presque !':' — Reprends le cours puis réessaie.');r.className='result '+(s===3?'ok':'ko')}
 function gradeRec(){let s=0;[['r1','a'],['r2','a'],['r3','a']].forEach(([q,a])=>{let e=document.querySelector('input[name="'+q+'"]:checked');if(e&&e.value===a)s++});let r=document.getElementById('resultRec');r.textContent='Score : '+s+'/3'+(s===3?' — Bravo !':s===2?' — Presque !':' — Reprends la méthode puis réessaie.');r.className='result '+(s===3?'ok':'ko')}
 function gradeFrac(){let s=0;[['f1','a'],['f2','a'],['f3','b']].forEach(([q,a])=>{let e=document.querySelector('input[name="'+q+'"]:checked');if(e&&e.value===a)s++});let r=document.getElementById('resultFrac');r.textContent='Score : '+s+'/3'+(s===3?' — Bravo !':s===2?' — Presque !':' — Reprends le cours puis réessaie.');r.className='result '+(s===3?'ok':'ko')}

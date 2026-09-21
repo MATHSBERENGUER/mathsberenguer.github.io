@@ -36,7 +36,8 @@ body.home-mode>header,body.home-mode>nav,body.home-mode>main,body.home-mode>foot
 </section>
 <header><div class="wrap"><h1>Maths M. Berenguer</h1><p>Les maths au collège, simplement.</p></div></header><nav><div class="wrap tabs"><button class="tab home-tab" onclick="goHome()">🏠 Accueil</button><button class="tab active" data-level="5e">5e</button><button class="tab" data-level="4e">4e</button><button class="tab" data-level="3e">3e</button></div></nav><main class="wrap">
 <section id="5e" class="level active"><div id="fiveHome"><div class="hero"><span class="badge">Classe de 5e</span><h2>Mes séquences</h2><p class="muted">Cours, vidéos, exercices et révisions.</p></div><div class="grid"><article class="card"><span class="badge">Séquence 1</span><h3>L'ordre des opérations</h3><p>Parenthèses, calculs sans parenthèses, priorités opératoires et problèmes.</p><div class="btns"><button class="btn" onclick="openSeq()">Commencer la séquence →</button></div></article><article class="card"><span class="badge">Séquence 2</span><h3>📐 Utilisation de la Géorègle</h3><p>Tracer des perpendiculaires et des parallèles, mesurer et construire des angles.</p><div class="btns"><button class="btn" onclick="openSeq2()">Commencer la séquence →</button></div></article>
-<article class="card"><span class="badge">Séquence 3</span><h3>🔺 Triangles</h3><p>Inégalité triangulaire, constructibilité et construction de triangles.</p><div class="btns"><button class="btn" onclick="openSeq3()">Commencer la séquence →</button></div></article></div></div>
+<article class="card"><span class="badge">Séquence 3</span><h3>🔺 Triangles</h3><p>Inégalité triangulaire, constructibilité et construction de triangles.</p><div class="btns"><button class="btn" onclick="openSeq3()">Commencer la séquence →</button></div></article>
+<article class="card"><span class="badge">Séquence 4</span><h3>🍰 Fractions</h3><p>Notion de fraction, proportions, quotients égaux, divisions décimales et comparaison de fractions.</p><div class="btns"><button class="btn" onclick="openSeq4()">Commencer la séquence →</button></div></article></div></div>
 <div id="seq1" class="sequence">
 <button class="btn light back" onclick="closeSeq()">← Retour aux séquences</button>
 <div class="hero">
@@ -287,6 +288,87 @@ body.home-mode>header,body.home-mode>nav,body.home-mode>main,body.home-mode>foot
 </article>
 </div>
 
+<div id="seq4" class="sequence">
+<button class="btn light back" onclick="closeSeq4()">← Retour aux séquences</button>
+
+<div class="hero">
+  <span class="badge">5e • Séquence 4</span>
+  <h2>🍰 Fractions</h2>
+  <p>Comprendre les fractions, les proportions et les quotients égaux, effectuer une division décimale et comparer des fractions.</p>
+</div>
+
+<div class="resource-nav" style="grid-template-columns:repeat(auto-fit,minmax(145px,1fr))">
+  <a href="#coursFrac">📘 COURS</a>
+  <a href="#activitesFrac">🧩 ACTIVITÉS</a>
+  <a href="#videosFrac">🎥 VIDÉOS</a>
+  <a class="exercise-link" href="#exercicesFrac">✏️ EXERCICES</a>
+  <a href="#revisionFrac">🎯 RÉVISIONS</a>
+  <a href="#qcmFrac">🎮 QCM</a>
+</div>
+
+<h2 id="coursFrac" class="section-title">📘 COURS</h2>
+<div class="grid">
+  <article class="card"><span class="badge">I</span><h3>Notion de fraction</h3><p>Comprendre une fraction comme quotient, identifier numérateur et dénominateur et exprimer une proportion.</p></article>
+  <article class="card"><span class="badge">II</span><h3>Quotients égaux</h3><p>Multiplier ou diviser le numérateur et le dénominateur par un même nombre et simplifier une fraction.</p></article>
+  <article class="card"><span class="badge">III</span><h3>Division de deux nombres décimaux</h3><p>Transformer le quotient pour obtenir un dénominateur entier puis effectuer la division.</p></article>
+  <article class="card"><span class="badge">IV</span><h3>Comparaison de fractions</h3><p>Comparer avec un même dénominateur, par rapport à 1 ou à l'aide de valeurs approchées.</p></article>
+</div>
+<article class="card" style="margin-top:14px">
+  <span class="badge">Cours complet</span><h3>📘 Cours – Fractions</h3>
+  <p class="muted">Les quatre parties du cours réunies dans un même PDF.</p>
+  <div class="btns"><a class="btn" href="docs/cours-5e-fractions.pdf" target="_blank">📘 Ouvrir le cours</a></div>
+</article>
+
+<h2 id="activitesFrac" class="section-title">🧩 ACTIVITÉS</h2>
+<div class="grid">
+  <article class="card"><span class="badge">Introduction</span><h3>🏷️ Classer les étiquettes</h3><p class="muted">Relier différentes représentations d'un même nombre : fraction, quotient, pourcentage, dessin et situation.</p><div class="btns"><a class="btn" href="docs/activite-5e-etiquettes-fractions.pdf" target="_blank">🧩 Ouvrir l’activité</a></div></article>
+  <article class="card"><span class="badge">Bilan</span><h3>🧠 Carte mentale</h3><p class="muted">Organiser les notions importantes de la séquence pour mieux les mémoriser.</p><div class="btns"><a class="btn" href="docs/activite-5e-carte-mentale-fractions.pdf" target="_blank">🧠 Créer ma carte mentale</a></div></article>
+</div>
+
+<h2 id="videosFrac" class="section-title">🎥 VIDÉOS</h2>
+<div class="grid">
+  <article class="card"><span class="badge">Vidéo 1</span><h3>Notion de fraction</h3><p class="muted">Fraction, quotient, numérateur, dénominateur et proportion.</p><div class="btns"><a class="btn" href="videos/video1-5e-fractions.mp4" target="_blank">▶️ Regarder</a></div></article>
+  <article class="card"><span class="badge">Vidéo 2</span><h3>Quotients égaux</h3><p class="muted">Fractions égales et simplification.</p><div class="btns"><a class="btn" href="videos/video2-5e-fractions.mp4" target="_blank">▶️ Regarder</a></div></article>
+  <article class="card"><span class="badge">Vidéo 3</span><h3>Division de deux nombres décimaux</h3><p class="muted">Rendre le dénominateur entier avant d'effectuer la division.</p><div class="btns"><a class="btn" href="videos/video3-5e-fractions.mp4" target="_blank">▶️ Regarder</a></div></article>
+  <article class="card"><span class="badge">Vidéo 4</span><h3>Comparer des fractions</h3><p class="muted">Premières méthodes de comparaison de fractions.</p><div class="btns"><a class="btn" href="videos/video4-5e-fractions.mp4" target="_blank">▶️ Regarder</a></div></article>
+  <article class="card"><span class="badge">Vidéo 5</span><h3>Comparaison de fractions</h3><p class="muted">Approfondir les différentes méthodes pour comparer et ranger des fractions.</p><div class="btns"><a class="btn" href="videos/video5-5e-fractions.mp4" target="_blank">▶️ Regarder</a></div></article>
+</div>
+
+<h2 id="exercicesFrac" class="section-title exercise-title">✏️ EXERCICES</h2>
+<div class="grid">
+  <article class="card"><span class="badge">Exercices 1 à 4</span><h3>Notions de fractions</h3><p class="muted">Représentations, quotients, calculs et placement sur une droite graduée.</p></article>
+  <article class="card"><span class="badge">Exercices 5 à 8</span><h3>Proportions</h3><p class="muted">Exprimer et comparer des proportions à l'aide de fractions.</p></article>
+  <article class="card"><span class="badge">Exercices 9 à 12</span><h3>Quotients égaux</h3><p class="muted">Compléter des égalités, simplifier des fractions et travailler sur une droite graduée.</p></article>
+  <article class="card"><span class="badge">Exercices 13 à 16</span><h3>Division décimale</h3><p class="muted">Transformer des quotients et résoudre des problèmes de division.</p></article>
+  <article class="card"><span class="badge">Exercices 17 à 20</span><h3>Comparaison de fractions</h3><p class="muted">Comparer et ranger des fractions avec différentes méthodes.</p></article>
+  <article class="card"><span class="badge">Exercices 21 à 24</span><h3>Exercices supplémentaires</h3><p class="muted">Encadrements, rangements, audiences et proportions.</p></article>
+</div>
+<article class="card" style="margin-top:14px">
+  <span class="badge">Fiche complète</span><h3>✏️ Tous les exercices de la séquence</h3>
+  <p class="muted">Notions de fractions, proportions, quotients égaux, divisions décimales, comparaisons, problèmes et exercices supplémentaires.</p>
+  <div class="btns"><a class="btn" href="docs/exercices-5e-fractions.pdf" target="_blank">📄 Ouvrir les exercices</a></div>
+</article>
+
+<h2 id="revisionFrac" class="section-title">🎯 JE PRÉPARE MON ÉVALUATION</h2>
+<div class="grid">
+  <article class="card"><span class="badge">Organisation</span><h3>📋 Plan de travail</h3><p class="muted">Coche les activités, vidéos et exercices réalisés au fur et à mesure de la séquence.</p><div class="btns"><a class="btn" href="docs/plan-de-travail-5e-fractions.pdf" target="_blank">📋 Ouvrir le plan de travail</a></div></article>
+  <article class="card"><span class="badge">Évaluation blanche</span><h3>📝 Je m'entraîne</h3><p class="muted">L'évaluation blanche se trouve sur la partie droite du plan de travail : notions de fraction, division décimale, proportions, quotients égaux et comparaison.</p><div class="btns"><a class="btn" href="docs/plan-de-travail-5e-fractions.pdf" target="_blank">📝 Ouvrir l’évaluation blanche</a></div></article>
+  <article class="card"><h3>À retenir</h3><p>1. Une fraction est un quotient.<br>2. Un quotient ne change pas si l'on multiplie ou divise numérateur et dénominateur par un même nombre non nul.<br>3. Pour une division décimale, on peut rendre le dénominateur entier.<br>4. Plusieurs méthodes permettent de comparer des fractions.</p></article>
+</div>
+
+<h2 id="qcmFrac" class="section-title">🎮 JE TESTE MES CONNAISSANCES</h2>
+<article class="card quiz">
+  <span class="badge">Mini-QCM</span><h3>Fractions</h3>
+  <p><b>1.</b> Dans 3/4, le nombre 3 est :</p>
+  <label><input type="radio" name="f1" value="a"> le numérateur</label><label><input type="radio" name="f1" value="b"> le dénominateur</label>
+  <p><b>2.</b> Quelle fraction est égale à 3/4 ?</p>
+  <label><input type="radio" name="f2" value="a"> 6/8</label><label><input type="radio" name="f2" value="b"> 6/7</label><label><input type="radio" name="f2" value="c"> 4/3</label>
+  <p><b>3.</b> Parmi 9/11 et 12/7 :</p>
+  <label><input type="radio" name="f3" value="a"> les deux sont inférieures à 1</label><label><input type="radio" name="f3" value="b"> 9/11 &lt; 1 &lt; 12/7</label><label><input type="radio" name="f3" value="c"> les deux sont supérieures à 1</label>
+  <button class="btn" onclick="gradeFrac()">Voir mon score</button><div id="resultFrac" class="result"></div>
+</article>
+</div>
+
 </section>
 <section id="4e" class="level"><div class="hero"><span class="badge">Classe de 4e</span><h2>Mes séquences</h2></div><div class="grid"><article class="card"><h3>Théorème de Pythagore</h3><p class="muted">La séquence complète arrive bientôt.</p></article></div></section><section id="3e" class="level"><div class="hero"><span class="badge">Classe de 3e</span><h2>Mes séquences</h2></div><div class="grid"><article class="card"><h3>Arithmétique</h3><p class="muted">La séquence complète arrive bientôt.</p></article><article class="card"><h3>Calcul littéral</h3><p class="muted">La séquence complète arrive bientôt.</p></article></div></section>
 </main><footer>Maths M. Berenguer • Espace pédagogique</footer><script>
@@ -296,6 +378,7 @@ function goHome(){
  document.getElementById('seq1').classList.remove('open');
  document.getElementById('seq2').classList.remove('open');
  document.getElementById('seq3').classList.remove('open');
+ document.getElementById('seq4').classList.remove('open');
  document.getElementById('fiveHome').style.display='block';
  window.scrollTo(0,0);
 }
@@ -309,17 +392,21 @@ function showLevel(level){
  document.getElementById('seq1').classList.remove('open');
  document.getElementById('seq2').classList.remove('open');
  document.getElementById('seq3').classList.remove('open');
+ document.getElementById('seq4').classList.remove('open');
  document.getElementById('fiveHome').style.display='block';
  window.scrollTo(0,0);
 }
 document.querySelectorAll('.tab[data-level]').forEach(b=>b.addEventListener('click',()=>showLevel(b.dataset.level)));
-function openSeq(){document.getElementById('fiveHome').style.display='none';document.getElementById('seq2').classList.remove('open');document.getElementById('seq3').classList.remove('open');document.getElementById('seq1').classList.add('open');window.scrollTo(0,0)}
+function openSeq(){document.getElementById('fiveHome').style.display='none';document.getElementById('seq2').classList.remove('open');document.getElementById('seq3').classList.remove('open');document.getElementById('seq4').classList.remove('open');document.getElementById('seq1').classList.add('open');window.scrollTo(0,0)}
 function closeSeq(){document.getElementById('seq1').classList.remove('open');document.getElementById('fiveHome').style.display='block';window.scrollTo(0,0)}
-function openSeq2(){document.getElementById('fiveHome').style.display='none';document.getElementById('seq1').classList.remove('open');document.getElementById('seq3').classList.remove('open');document.getElementById('seq2').classList.add('open');window.scrollTo(0,0)}
+function openSeq2(){document.getElementById('fiveHome').style.display='none';document.getElementById('seq1').classList.remove('open');document.getElementById('seq3').classList.remove('open');document.getElementById('seq4').classList.remove('open');document.getElementById('seq2').classList.add('open');window.scrollTo(0,0)}
 function closeSeq2(){document.getElementById('seq2').classList.remove('open');document.getElementById('fiveHome').style.display='block';window.scrollTo(0,0)}
-function openSeq3(){document.getElementById('fiveHome').style.display='none';document.getElementById('seq1').classList.remove('open');document.getElementById('seq2').classList.remove('open');document.getElementById('seq3').classList.add('open');window.scrollTo(0,0)}
+function openSeq3(){document.getElementById('fiveHome').style.display='none';document.getElementById('seq1').classList.remove('open');document.getElementById('seq2').classList.remove('open');document.getElementById('seq4').classList.remove('open');document.getElementById('seq3').classList.add('open');window.scrollTo(0,0)}
 function closeSeq3(){document.getElementById('seq3').classList.remove('open');document.getElementById('fiveHome').style.display='block';window.scrollTo(0,0)}
 function gradeTri(){let s=0;[['t1','b'],['t2','a'],['t3','c']].forEach(([q,a])=>{let e=document.querySelector('input[name="'+q+'"]:checked');if(e&&e.value===a)s++});let r=document.getElementById('resultTri');r.textContent='Score : '+s+'/3'+(s===3?' — Bravo !':s===2?' — Presque !':' — Reprends le cours puis réessaie.');r.className='result '+(s===3?'ok':'ko')}
+function openSeq4(){document.getElementById('fiveHome').style.display='none';document.getElementById('seq1').classList.remove('open');document.getElementById('seq2').classList.remove('open');document.getElementById('seq3').classList.remove('open');document.getElementById('seq4').classList.add('open');window.scrollTo(0,0)}
+function closeSeq4(){document.getElementById('seq4').classList.remove('open');document.getElementById('fiveHome').style.display='block';window.scrollTo(0,0)}
+function gradeFrac(){let s=0;[['f1','a'],['f2','a'],['f3','b']].forEach(([q,a])=>{let e=document.querySelector('input[name="'+q+'"]:checked');if(e&&e.value===a)s++});let r=document.getElementById('resultFrac');r.textContent='Score : '+s+'/3'+(s===3?' — Bravo !':s===2?' — Presque !':' — Reprends le cours puis réessaie.');r.className='result '+(s===3?'ok':'ko')}
 function gradeGeo(){let s=0;[['g1','b'],['g2','a'],['g3','c']].forEach(([q,a])=>{let e=document.querySelector('input[name="'+q+'"]:checked');if(e&&e.value===a)s++});let r=document.getElementById('resultGeo');r.textContent='Score : '+s+'/3'+(s===3?' — Bravo !':s===2?' — Presque !':' — Reprends le cours puis réessaie.');r.className='result '+(s===3?'ok':'ko')}
 function grade(){let s=0;[['q1','b'],['q2','a'],['q3','a']].forEach(([q,a])=>{let e=document.querySelector('input[name="'+q+'"]:checked');if(e&&e.value===a)s++});let r=document.getElementById('result');r.textContent='Score : '+s+'/3'+(s===3?' — Bravo, les priorités sont maîtrisées !':s===2?' — Presque ! Revois la question manquée.':' — Reprends les règles puis réessaie.');r.className='result '+(s===3?'ok':'ko')}
 </script></body></html>
